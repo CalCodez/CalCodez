@@ -57,3 +57,6 @@ body {
 	padding: 8px;
 	background-color: var(--cranberry-dark);
 }
+body {
+	margin-top: 20px;
+}

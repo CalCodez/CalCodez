@@ -1,0 +1,8 @@
+span {
+	height: 80px;
+	width: 100px;
+	border-radius: 10px;
+	background: var(--gold);
+	color: var(--cranberry);
+	padding: 20px;
+}
