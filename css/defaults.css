@@ -1,0 +1,59 @@
+:root {
+	--blue-dark: #005dab;
+	--blue-light: #1695ff;
+	--blue-light-transparent: #3ba2f6ae;
+	--blue: #0f52ba;
+	--cranberry-dark: #7a1717;
+	--cranberry-dark-transparent: #341313e2;
+	--cranberry-dark-transparent-menu: #740b0bde;
+	--cranberry-light: #ba4242;
+	--cranberry: #7a1927;
+	--cream-dark: #c0a96d;
+	--cream-light: #d8cba6;
+	--cream: #c5b078;
+	--cream-transparent: #c5b178be;
+	--gold-dark: #7d6936;
+	--gold-light: #b49951;
+	--gold: #998242;
+	--turquoise-dark: #00eaec;
+	--turquoise-light: #a1feff;
+	--turquoise: #0efdff;
+	--true-black: #000;
+	--black-transparent: #000000d4;
+	--devslopes-black: #303136;
+	--devslopes-logo-red: #db5252;
+	--devslopes-btn-red: #ff5267;
+	--devslopes-white: #ffffef;
+
+	--ol: 1px solid white;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+li,
+a {
+	text-decoration: 0;
+	list-style: 0;
+	cursor: pointer;
+}
+
+.container {
+	display: flex;
+	box-sizing: border-box;
+	justify-content: center;
+	justify-items: center;
+}
+
+.content {
+	display: flex;
+	box-sizing: content-box;
+}
+
+html,
+body {
+	padding: 8px;
+	background-color: var(--cranberry-dark);
+}
