@@ -61,6 +61,12 @@
 	display: none;
 }
 
+.profile-container {
+	width: 100%;
+	height: 300px;
+	border: 2px ridge var(--cream-dark);
+}
+
 section {
 	width: 100%;
 	height: 40px;
