@@ -62,4 +62,5 @@ body {
 	box-shadow: 2px 2px 15px var(--gold);
 	height: auto;
 	position: relative;
+	flex-direction: column;
 }
