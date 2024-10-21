@@ -27,11 +27,11 @@
 	flex-direction: column;
 }
 
-/*.active-menu {
+.active-menu {
 	width: 300px;
 	position: relative;
 	text-align: center;
-}*/
+}
 
 .main-menu .fa-bars {
 	color: var(--cranberry-dark);
@@ -44,4 +44,17 @@
 	color: var(--cranberry-dark);
 	font-size: 20px;
 	margin-top: 40px;
+	display: flex;
+}
+
+.active-icons {
+	color: var(--cranberry-dark);
+	font-size: 20px;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 30px;
+	outline: var(--ol);
+	display: none;
 }
