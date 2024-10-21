@@ -58,5 +58,8 @@ body {
 	background-color: var(--cranberry-dark);
 }
 body {
-	margin-top: 20px;
+	display: flex;
+	box-shadow: 2px 2px 15px var(--gold);
+	height: auto;
+	position: relative;
 }
