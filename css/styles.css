@@ -20,45 +20,51 @@
 
 .main-menu {
 	width: fit-content;
-	height: 300px;
+	height: fit-content;
 	border: 2px solid var(--gold);
 	position: absolute;
 	background-color: var(--gold);
 	display: flex;
 	flex-direction: column;
 	right: 0;
+	transition: ease-in-out;
 }
 
 .active-menu {
-	width: 300px;
-	position: relative;
+	width: 150px;
+	position: absolute;
 	text-align: center;
+	transition: ease-in 1s;
+	background-color: var(--cranberry-dark);
 }
 
 .main-menu .fa-bars {
 	color: var(--cranberry-dark);
-	font-size: 25px;
+	font-size: 30px;
 	position: absolute;
 	top: 0;
+	right: 7px;
 }
 
 .main-menu .side-bar-icons {
 	color: var(--cranberry-dark);
-	font-size: 20px;
-	margin-top: 40px;
-	display: flex;
-}
-
-.active-icons {
-	color: var(--cranberry-dark);
-	font-size: 20px;
-	margin-top: 40px;
+	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	row-gap: 30px;
-	outline: var(--ol);
-	display: none;
+	font-size: 0.8rem;
+}
+
+.main-menu .side-bar-icons-active {
+	flex-direction: row;
+	column-gap: 10px;
+	font-size: 20px;
+	color: var(--gold);
+}
+
+.side-bar-icons .fa-solid {
+	font-size: 20px;
 }
 
 .profile-container {

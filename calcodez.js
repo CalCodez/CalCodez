@@ -10,25 +10,29 @@ const createElement = (arg1) => document.createElement(arg1);
 const selectAll = (arg) => document.querySelectorAll(arg);
 const select = (arg) => document.querySelector(arg);
 
-const textDisplay = {
-	user: 'About',
-	project: 'Projects',
-	medium: 'Medium',
-	training: 'Training',
-};
-
 const menuToggler = getId('main-toggler');
 const mainMenu = getId('menu');
 const sideBarIcons = getClass('side-bar-icons');
 const activeIcons = getClass('active-icons');
-const click = 'click';
-const active = 'active-menu';
 const [userIcon, projectIcon, mediumIcon, trainingIcon] = sideBarIcons;
 
-menuToggler.addEventListener(click, function () {
-	if (!menuToggler.classList.contains(active)) {
+menuToggler.addEventListener('click', function () {
+	const active = 'active-menu';
+	const iconsActive = 'side-bar-icons-active';
+
+	if (!mainMenu.classList.contains(active)) {
 		toggleClass(mainMenu, active);
+		menuToggler.style.color = 'var(--gold)';
+
+		for (let links of sideBarIcons) {
+			toggleClass(links, iconsActive);
+		}
 	} else {
 		toggleClass(mainMenu, active);
+		menuToggler.style.color = 'var(--cranberry-dark)';
+
+		for (let links of sideBarIcons) {
+			toggleClass(links, iconsActive);
+		}
 	}
 });
