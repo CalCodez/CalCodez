@@ -44,7 +44,7 @@ a {
 	display: flex;
 	box-sizing: border-box;
 	justify-content: center;
-	justify-items: center;
+	align-items: center;
 }
 
 .content {
@@ -59,7 +59,7 @@ body {
 }
 body {
 	display: flex;
-	box-shadow: 2px 2px 15px var(--gold);
+	box-shadow: 2px 2px 15px var(--cream);
 	height: auto;
 	position: relative;
 	flex-direction: column;
