@@ -36,3 +36,32 @@ menuToggler.addEventListener('click', function () {
 		}
 	}
 });
+
+const sectionToggle = getClass('section-toggle');
+const [aboutToggle, projectToggle, trainingToggle] = sectionToggle;
+console.log(sectionToggle);
+
+const sections = selectAll('section');
+
+const [aboutSection, projectSection, trainingSection] = sections;
+
+const toggleSection = (button, section) => {
+	const sectionActive = 'section-active';
+	const toggleUp = 'fa-caret-up';
+	const toggleDown = 'fa-caret-down';
+	button.addEventListener('click', function () {
+		if (!section.classList.contains(sectionActive)) {
+			toggleClass(section, sectionActive);
+			removeClass(button, toggleDown);
+			addClass(button, toggleUp);
+		} else {
+			toggleClass(section, sectionActive);
+			removeClass(button, toggleUp);
+			addClass(button, toggleDown);
+		}
+	});
+};
+
+toggleSection(aboutToggle, aboutSection);
+toggleSection(projectToggle, projectSection);
+toggleSection(trainingToggle, trainingSection);
