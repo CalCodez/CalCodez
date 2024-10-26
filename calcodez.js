@@ -39,16 +39,16 @@ menuToggler.addEventListener('click', function () {
 
 const sectionToggle = getClass('section-toggle');
 const [aboutToggle, projectToggle, trainingToggle] = sectionToggle;
-console.log(sectionToggle);
 
 const sections = selectAll('section');
 
 const [aboutSection, projectSection, trainingSection] = sections;
 
+const sectionActive = 'section-active';
+const toggleUp = 'fa-caret-up';
+const toggleDown = 'fa-caret-down';
+
 const toggleSection = (button, section) => {
-	const sectionActive = 'section-active';
-	const toggleUp = 'fa-caret-up';
-	const toggleDown = 'fa-caret-down';
 	button.addEventListener('click', function () {
 		if (!section.classList.contains(sectionActive)) {
 			toggleClass(section, sectionActive);
@@ -63,5 +63,25 @@ const toggleSection = (button, section) => {
 };
 
 toggleSection(aboutToggle, aboutSection);
-toggleSection(projectToggle, projectSection);
 toggleSection(trainingToggle, trainingSection);
+
+const sectionLabels = getClass('section-label');
+const [aboutLabel, projectLabel, trainingLabel] = sectionLabels;
+
+const cardContainer = getId('cardContainer');
+
+projectToggle.addEventListener('click', function () {
+	if (!projectSection.classList.contains(sectionActive)) {
+		toggleClass(projectSection, sectionActive);
+		removeClass(projectToggle, toggleDown);
+		addClass(projectToggle, toggleUp);
+		toggleClass(cardContainer, 'card-container-active');
+		projectLabel.style.display = 'none';
+	} else {
+		toggleClass(projectSection, sectionActive);
+		toggleClass(cardContainer, 'card-container-active');
+		removeClass(projectToggle, toggleUp);
+		addClass(projectToggle, toggleDown);
+		projectLabel.style.display = 'block';
+	}
+});
