@@ -28,7 +28,8 @@
 	display: flex;
 	flex-direction: column;
 	right: 0;
-	transition: ease-in-out;
+	transition: ease-in-out 0.5s;
+	z-index: 1;
 }
 
 .active-menu {
@@ -79,6 +80,7 @@
 	padding: 15px 0;
 	border-radius: 8px;
 	box-shadow: -2px -2px 15px 2px var(--cranberry-dark-transparent);
+	position: relative;
 }
 
 .portfolio-image-container,
@@ -106,6 +108,23 @@
 
 .portfolio-title-container h4 {
 	font-size: 30px;
+}
+
+.logo-container {
+	width: 350px;
+	height: 350px;
+	outline: var(--ol);
+}
+
+.logo-handler {
+	width: 80px;
+	height: 80px;
+	outline: var(--ol);
+}
+
+.logo-handler img {
+	width: 100%;
+	height: 100%;
 }
 
 /* **Sections Styles */
