@@ -110,23 +110,6 @@
 	font-size: 30px;
 }
 
-.logo-container {
-	width: 350px;
-	height: 350px;
-	outline: var(--ol);
-}
-
-.logo-handler {
-	width: 80px;
-	height: 80px;
-	outline: var(--ol);
-}
-
-.logo-handler img {
-	width: 100%;
-	height: 100%;
-}
-
 /* **Sections Styles */
 section {
 	width: 100%;
@@ -253,8 +236,10 @@ section i {
 }
 
 .project-image-container {
-	width: 100%;
+	width: 60%;
 	height: 60%;
+	border: 3px ridge var(--gold);
+	border-radius: 8px;
 }
 
 .project-image-container img {
