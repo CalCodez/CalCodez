@@ -105,6 +105,7 @@ section i {
 	font-size: 30px;
 	text-shadow: 1.5px 1.5px 1.5px black;
 	top: 0;
+	cursor: pointer;
 }
 
 .section-active {
@@ -258,4 +259,34 @@ section i {
 	place-items: center;
 	font-size: 20px;
 	font-weight: 600;
+}
+
+.snapCode {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--cranberry-dark-transparent);
+	outline: var(--ol);
+	z-index: 99;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	cursor: pointer;
+}
+
+.snapCode img {
+	width: 80%;
+	height: 80%;
+	object-fit: contain;
+}
+
+.snapCode-close {
+	color: var(--cream-dark);
+	font-size: 30px;
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	z-index: 100;
 }

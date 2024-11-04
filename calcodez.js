@@ -128,10 +128,23 @@ const source = {
 		src: './assets/project_card_images/Google.png',
 		alt: 'Google Home Page',
 	},
+	snapchat: {
+		src: './assets/snapcode/Snapchat-206999597.jpg',
+		alt: 'SnapCode',
+	},
 };
 
-const { saas, pokemon, calTube, responsive, social, favz, tribute, google } =
-	source;
+const {
+	saas,
+	pokemon,
+	calTube,
+	responsive,
+	social,
+	favz,
+	tribute,
+	google,
+	snapchat,
+} = source;
 
 //++Project Toggle Variables */
 
@@ -174,5 +187,38 @@ wrapperExit.addEventListener('click', function () {
 	toggleClass(cardWrapper, 'flex-active');
 	img.removeAttribute('src');
 	img.removeAttribute('alt');
-	console.log(img);
+
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'Escape') {
+			toggleClass(cardWrapper, 'flex-active');
+		}
+	});
+});
+
+const snapChatToggler = getId('snapCode');
+
+snapChatToggler.addEventListener('click', function () {
+	const snapCodeContainer = createElement('div');
+	const snapExit = createElement('i');
+	const parent = select('body');
+	addClass(snapCodeContainer, 'snapCode');
+	addClass(snapCodeContainer, 'container');
+	addClass(snapExit, 'fa-x');
+	addClass(snapExit, 'snapCode-close');
+	appendChild(parent, snapCodeContainer);
+	appendChild(snapCodeContainer, snapExit);
+	appendChild(snapCodeContainer, img);
+
+	img.src = snapchat.src;
+	img.alt = snapchat.alt;
+
+	snapExit.addEventListener('click', function () {
+		snapCodeContainer.style.display = 'none';
+	});
+
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'Escape') {
+			snapCodeContainer.style.display = 'none';
+		}
+	});
 });
