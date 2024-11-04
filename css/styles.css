@@ -1,72 +1,36 @@
 .header-container {
 	display: flex;
 	width: 100%;
-	height: 80px;
+	height: 60px;
 	align-items: center;
-	justify-content: space-between;
 	margin-bottom: 50px;
 	border-radius: 8px;
 }
 
 .header-container h5 {
-	font-size: 60px;
+	font-size: 50px;
 	color: var(--cream-dark);
 	margin-left: 10px;
 	font-family: 'BIENUG Trial', sans-serif;
-	letter-spacing: 3;
+	letter-spacing: 10;
 	text-shadow: 5px 5px 10px black;
+	text-decoration: underline var(--cream-dark);
 }
 
-/* **Side Bar Menu */
-
-.main-menu {
-	width: fit-content;
+.social-container {
+	width: 280px;
 	height: fit-content;
-	border: 2px solid var(--gold);
-	position: absolute;
-	background-color: var(--gold);
-	display: flex;
-	flex-direction: column;
-	right: 0;
-	transition: ease-in-out 0.5s;
-	z-index: 1;
-}
-
-.active-menu {
-	width: 150px;
-	position: absolute;
-	text-align: center;
-	transition: ease-in 1s;
-	background-color: var(--cranberry-dark);
-}
-
-.main-menu .fa-bars {
-	color: var(--cranberry-dark);
+	place-content: center;
+	place-items: center;
 	font-size: 30px;
-	position: absolute;
-	top: 0;
-	right: 7px;
+	justify-content: space-evenly;
+	margin-top: 20px;
 }
 
-.main-menu .side-bar-icons {
-	color: var(--cranberry-dark);
-	margin-top: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-size: 0.8rem;
-}
-
-.main-menu .side-bar-icons-active {
-	flex-direction: row;
-	column-gap: 10px;
-	font-size: 20px;
-	color: var(--gold);
-}
-
-.side-bar-icons .fa-solid {
-	font-size: 20px;
+.social-container a {
+	color: var(--cream-dark);
+	font-weight: 600;
+	text-shadow: 5px 5px 5px black;
 }
 
 /* **Profile  */
@@ -90,8 +54,8 @@
 }
 
 .portfolio-image-container img {
-	height: 100%;
-	width: 100%;
+	height: 80%;
+	width: 80%;
 	object-fit: cover;
 	border-radius: 50%;
 	box-shadow: 3px 3px 15px 3px var(--cream-dark);
@@ -104,6 +68,7 @@
 	font-family: 'BIENUG Trial', sans-serif;
 	letter-spacing: 2.5;
 	text-shadow: 5px 5px 5px black;
+	justify-content: center;
 }
 
 .portfolio-title-container h4 {
@@ -130,6 +95,7 @@ section {
 	transition: ease-in-out 0.5s;
 	z-index: 2;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 section i {
@@ -147,17 +113,35 @@ section i {
 
 /* Project Card */
 
+.project-section {
+	flex-direction: row;
+}
+
 .span-container {
 	display: none;
 	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
 	background: var(--cranberry-dark-transparent);
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
-	gap: 30px;
 	flex-wrap: wrap;
 	overflow-y: scroll;
+	column-gap: 50px;
+}
+
+.toggle-handler {
+	width: 380px;
+	height: 100%;
+	flex-wrap: wrap;
+	padding: 20px 0;
+	gap: 20px;
+}
+
+.logo-container {
+	width: 380px;
+	height: 100%;
+	position: relative;
 }
 
 .span-container-active {
@@ -172,14 +156,14 @@ section i {
 }
 
 .card-toggles {
-	width: 280px;
+	width: 150px;
 	height: 40px;
 	border: 2px solid var(--gold);
 	place-content: center;
 	place-items: center;
 	color: var(--gold);
 	font-weight: 800;
-	font-size: 20px;
+	font-size: 1em;
 	border-radius: 20px;
 	box-shadow: 1px 1px 3px var(--gold-light);
 	padding: 5px;
