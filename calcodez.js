@@ -222,3 +222,22 @@ snapChatToggler.addEventListener('click', function () {
 		}
 	});
 });
+
+const icons = {
+	facebook: 'fa-facebook-active',
+	instagram: 'fa-instagram-active',
+	snapchat: 'fa-snapchat-active',
+	threads: 'fa-threads-active',
+};
+
+const iconToggler = getId('icon-toggler');
+const socialIcons = getClass('fa-brands');
+const [fb, ig, sc, threads] = socialIcons;
+
+iconToggler.addEventListener('click', function () {
+	toggleClass(fb, icons.facebook);
+	toggleClass(ig, icons.instagram);
+	toggleClass(sc, icons.snapchat);
+	toggleClass(threads, icons.threads);
+	console.log(socialIcons);
+});

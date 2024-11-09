@@ -48,3 +48,15 @@
 		transform: translateY(0) rotate(0deg);
 	}
 }
+
+@keyframes Social {
+	0% {
+		opacity: 0;
+		transform: rotate(-540deg) scale(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
+}
