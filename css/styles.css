@@ -53,6 +53,7 @@ h5 {
 	position: relative;
 	margin-bottom: -80px;
 }
+
 #icon-toggler {
 	position: absolute;
 	bottom: 30px;
@@ -107,7 +108,7 @@ h5 {
 /* **Profile  */
 
 .profile-container {
-	width: 100%;
+	width: 80%;
 	height: auto;
 	border: 2px ridge var(--cream-dark);
 	flex-wrap: wrap;
@@ -115,7 +116,8 @@ h5 {
 	border-radius: 8px;
 	box-shadow: -2px -2px 15px 2px var(--cranberry-dark-transparent);
 	position: relative;
-	column-gap: 80px;
+	justify-content: space-around;
+	display: flex;
 }
 
 .portfolio-image-container,
@@ -152,7 +154,7 @@ h5 {
 
 /* **Sections Styles */
 section {
-	width: 100%;
+	width: 80%;
 	height: 40px;
 	border: 2px solid var(--cream-dark);
 	background: linear-gradient(
@@ -181,6 +183,7 @@ section i {
 	text-shadow: 1.5px 1.5px 1.5px black;
 	top: 0;
 	cursor: pointer;
+	z-index: 1;
 }
 
 .section-active {
@@ -349,6 +352,52 @@ section i {
 	right: 0;
 	display: flex;
 	cursor: pointer;
+}
+
+.devslopes-wrapper {
+	display: none;
+}
+.devslopes-wrapper-active {
+	display: flex;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	flex-wrap: wrap;
+	background-color: var(--devslopes-black);
+	border-radius: 10px;
+	justify-content: space-around;
+	transition: all ease-in-out 1.5s;
+	animation: Devslopes-wrapper 1s ease 0s 1 normal forwards;
+}
+.devslopes-img-container,
+.devslopes-text-container {
+	width: 380px;
+	height: 395px;
+	background-color: var(--devslopes-black);
+	flex-direction: column;
+}
+
+.devslopes-text-container h3 {
+	color: var(--devslopes-logo-red);
+	font-family: 'Major Mono Display', sans-serif;
+
+	letter-spacing: 2;
+	font-size: 2em;
+}
+
+.devslopes-text-container h4 {
+	color: var(--devslopes-logo-red);
+	font-size: 2em;
+	text-align: center;
+	line-height: 2;
+	text-decoration: underline;
+	font-family: 'Major Mono Display', sans-serif;
+}
+
+.devslopes-img-container img {
+	width: 80%;
+	height: 80%;
+	box-shadow: 2px 2px 20px 5px var(--devslopes-logo-red);
 }
 
 .snapCode img {

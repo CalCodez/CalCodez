@@ -66,7 +66,7 @@ const toggleSection = (button, section) => {
 };
 
 toggleSection(aboutSectionToggle, aboutSection);
-toggleSection(trainingSectionToggle, trainingSection);
+//toggleSection(trainingSectionToggle, trainingSection);
 
 const sectionLabels = getClass('section-label');
 const [aboutLabel, projectLabel, trainingLabel] = sectionLabels;
@@ -257,3 +257,31 @@ const contactToggle = (toggler) => {
 contactToggle(contactLink);
 contactToggle(iconToggler);
 toggleProjectSection(projectLink);
+
+const devslopesWrapper = getId('devslopes-wrapper');
+
+const toggleTrainingSection = (toggler, section = trainingSection) => {
+	const click = 'click';
+	const devslopesActive = 'devslopes-wrapper-active';
+
+	toggler.addEventListener(click, function () {
+		if (!section.classList.contains(sectionActive)) {
+			toggleClass(trainingSection, sectionActive);
+			removeClass(trainingSectionToggle, toggleDown);
+			addClass(trainingSectionToggle, toggleUp);
+			trainingLabel.style.display = 'none';
+			trainingSectionToggle.style.color = 'var(--devslopes-logo-red)';
+			toggleClass(devslopesWrapper, devslopesActive);
+		} else {
+			toggleClass(trainingSection, sectionActive);
+			toggleClass(devslopesWrapper, devslopesActive);
+			removeClass(trainingSectionToggle, toggleUp);
+			addClass(trainingSectionToggle, toggleDown);
+			trainingLabel.style.display = 'block';
+			trainingSectionToggle.style.color = 'var(--cream-dark)';
+		}
+	});
+};
+
+toggleTrainingSection(trainingSectionToggle);
+toggleTrainingSection(trainingLink);

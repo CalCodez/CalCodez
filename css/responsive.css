@@ -8,3 +8,17 @@
 		width: 100%;
 	}
 }
+
+@media (max-width: 381px) {
+	.main-menu {
+		display: flex;
+	}
+
+	h5 {
+		font-size: 3rem;
+	}
+
+	.nav-container {
+		display: none;
+	}
+}
