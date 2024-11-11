@@ -39,6 +39,32 @@ menuToggler.addEventListener('click', function () {
 	}
 });
 
+const navLinks = getClass('nav-link');
+const [contactLink, projectLink, trainingLink, mediumLink] = navLinks;
+const icons = {
+	facebook: 'fa-facebook-active',
+	instagram: 'fa-instagram-active',
+	snapchat: 'fa-snapchat-active',
+	threads: 'fa-threads-active',
+};
+
+const iconToggler = getId('icon-toggler');
+const socialIcons = getClass('fa-brands');
+const [fb, ig, sc, threads] = socialIcons;
+
+const contactToggle = (toggler) => {
+	const click = 'click';
+	toggler.addEventListener(click, function () {
+		toggleClass(fb, icons.facebook);
+		toggleClass(ig, icons.instagram);
+		toggleClass(sc, icons.snapchat);
+		toggleClass(threads, icons.threads);
+	});
+};
+
+contactToggle(contactLink);
+contactToggle(iconToggler);
+
 const sectionToggle = getClass('section-toggle');
 const [aboutSectionToggle, projectSectionToggle, trainingSectionToggle] =
 	sectionToggle;
@@ -47,6 +73,7 @@ const sections = selectAll('section');
 
 const [aboutSection, projectSection, trainingSection] = sections;
 
+//** Needs to be grouped in an object (maybe?)*/
 const sectionActive = 'section-active';
 const toggleUp = 'fa-caret-up';
 const toggleDown = 'fa-caret-down';
@@ -64,14 +91,14 @@ const toggleSection = (button, section) => {
 		}
 	});
 };
-
 toggleSection(aboutSectionToggle, aboutSection);
-//toggleSection(trainingSectionToggle, trainingSection);
 
 const sectionLabels = getClass('section-label');
 const [aboutLabel, projectLabel, trainingLabel] = sectionLabels;
 const spanContainer = getId('spanContainer');
+//??About Section Function here
 
+//??Project Section Toggle Function
 const toggleProjectSection = (toggler, section = projectSection) => {
 	const click = 'click';
 	toggler.addEventListener(click, function () {
@@ -92,6 +119,7 @@ const toggleProjectSection = (toggler, section = projectSection) => {
 };
 
 toggleProjectSection(projectSectionToggle);
+toggleProjectSection(projectLink);
 
 const cardToggles = getClass('card-toggles');
 const [
@@ -151,13 +179,13 @@ const {
 	snapchat,
 } = source;
 
-//++Project Toggle Variables */
+//++Project-Card Toggle Variables */
 
 let imageContainer = getId('imageContainer');
 let projectTitleContainer = getId('projectTitleContainer');
 let img = createElement('img');
 
-//^^Project Toggle Function
+//??Project-Card Toggle Function
 const toggleProjectCards = (toggler, imageSrc, imageAlt, projectTitle) => {
 	const click = 'click';
 	const active = 'flex-active';
@@ -200,6 +228,7 @@ wrapperExit.addEventListener('click', function () {
 	});
 });
 
+//??SnapCode Variable/Function
 const snapChatToggler = getId('snapCode');
 
 snapChatToggler.addEventListener('click', function () {
@@ -228,39 +257,10 @@ snapChatToggler.addEventListener('click', function () {
 	});
 });
 
-const icons = {
-	facebook: 'fa-facebook-active',
-	instagram: 'fa-instagram-active',
-	snapchat: 'fa-snapchat-active',
-	threads: 'fa-threads-active',
-};
-
-const navLinks = getClass('nav-link');
-const [contactLink, projectLink, trainingLink, mediumLink] = navLinks;
-
-console.log(navLinks);
-
-const iconToggler = getId('icon-toggler');
-const socialIcons = getClass('fa-brands');
-const [fb, ig, sc, threads] = socialIcons;
-
-const contactToggle = (toggler) => {
-	const click = 'click';
-	toggler.addEventListener(click, function () {
-		toggleClass(fb, icons.facebook);
-		toggleClass(ig, icons.instagram);
-		toggleClass(sc, icons.snapchat);
-		toggleClass(threads, icons.threads);
-	});
-};
-
-contactToggle(contactLink);
-contactToggle(iconToggler);
-toggleProjectSection(projectLink);
-
-const devslopesWrapper = getId('devslopes-wrapper');
+//?? Training Section function
 
 const toggleTrainingSection = (toggler, section = trainingSection) => {
+	const devslopesWrapper = getId('devslopes-wrapper');
 	const click = 'click';
 	const devslopesActive = 'devslopes-wrapper-active';
 
