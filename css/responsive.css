@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+	.header-container {
+		justify-content: center;
+		row-gap: 15px;
+	}
+
+	.header-container .container {
+		width: 100%;
+	}
+}

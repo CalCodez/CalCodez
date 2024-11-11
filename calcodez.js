@@ -72,21 +72,26 @@ const sectionLabels = getClass('section-label');
 const [aboutLabel, projectLabel, trainingLabel] = sectionLabels;
 const spanContainer = getId('spanContainer');
 
-projectSectionToggle.addEventListener('click', function () {
-	if (!projectSection.classList.contains(sectionActive)) {
-		toggleClass(projectSection, sectionActive);
-		removeClass(projectSectionToggle, toggleDown);
-		addClass(projectSectionToggle, toggleUp);
-		toggleClass(spanContainer, 'span-container-active');
-		projectLabel.style.display = 'none';
-	} else {
-		toggleClass(projectSection, sectionActive);
-		toggleClass(spanContainer, 'span-container-active');
-		removeClass(projectSectionToggle, toggleUp);
-		addClass(projectSectionToggle, toggleDown);
-		projectLabel.style.display = 'block';
-	}
-});
+const toggleProjectSection = (toggler, section = projectSection) => {
+	const click = 'click';
+	toggler.addEventListener(click, function () {
+		if (!section.classList.contains(sectionActive)) {
+			toggleClass(section, sectionActive);
+			removeClass(projectSectionToggle, toggleDown);
+			addClass(projectSectionToggle, toggleUp);
+			toggleClass(spanContainer, 'span-container-active');
+			projectLabel.style.display = 'none';
+		} else {
+			toggleClass(section, sectionActive);
+			toggleClass(spanContainer, 'span-container-active');
+			removeClass(projectSectionToggle, toggleUp);
+			addClass(projectSectionToggle, toggleDown);
+			projectLabel.style.display = 'block';
+		}
+	});
+};
+
+toggleProjectSection(projectSectionToggle);
 
 const cardToggles = getClass('card-toggles');
 const [
@@ -230,14 +235,25 @@ const icons = {
 	threads: 'fa-threads-active',
 };
 
+const navLinks = getClass('nav-link');
+const [contactLink, projectLink, trainingLink, mediumLink] = navLinks;
+
+console.log(navLinks);
+
 const iconToggler = getId('icon-toggler');
 const socialIcons = getClass('fa-brands');
 const [fb, ig, sc, threads] = socialIcons;
 
-iconToggler.addEventListener('click', function () {
-	toggleClass(fb, icons.facebook);
-	toggleClass(ig, icons.instagram);
-	toggleClass(sc, icons.snapchat);
-	toggleClass(threads, icons.threads);
-	console.log(socialIcons);
-});
+const contactToggle = (toggler) => {
+	const click = 'click';
+	toggler.addEventListener(click, function () {
+		toggleClass(fb, icons.facebook);
+		toggleClass(ig, icons.instagram);
+		toggleClass(sc, icons.snapchat);
+		toggleClass(threads, icons.threads);
+	});
+};
+
+contactToggle(contactLink);
+contactToggle(iconToggler);
+toggleProjectSection(projectLink);

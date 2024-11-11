@@ -50,6 +50,8 @@ a {
 .content {
 	display: flex;
 	box-sizing: content-box;
+	justify-content: center;
+	align-items: center;
 }
 
 html,
@@ -84,7 +86,7 @@ body {
 	width: 150px;
 	position: absolute;
 	text-align: center;
-	transition: ease-in 1s;
+	transition: ease-in 0.5s;
 	background-color: var(--cranberry-dark);
 }
 
