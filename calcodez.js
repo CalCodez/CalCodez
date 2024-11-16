@@ -69,19 +69,20 @@ const aboutContainerToggle = (
 	const img = createElement('img');
 	const profileImage = getId('profileImage');
 
+	console.log(profileImage);
+
 	toggler.addEventListener(click, function () {
 		if (!container1.classList.contains(inactive)) {
 			toggleClass(container1, inactive);
 			toggleClass(container2, active);
-			appendChild(imageContainer, img);
 
-			img.src = calvin2.src;
-			img.alt = calvin2.alt;
+			profileImage.src = calvin2.src;
+			profileImage.alt = calvin2.alt;
 		} else {
 			toggleClass(container1, inactive);
 			toggleClass(container2, active);
-			img.src = calvin1.src;
-			appendChild(imageContainer, img);
+			profileImage.src = calvin1.src;
+			profileImage.alt = calvin1.alt;
 		}
 	});
 };

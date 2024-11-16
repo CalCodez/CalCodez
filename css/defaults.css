@@ -76,7 +76,7 @@ body {
 	border: 2px solid var(--gold);
 	position: absolute;
 	background-color: var(--gold);
-	display: flex;
+	display: none;
 	flex-direction: column;
 	right: 0;
 	transition: ease-in-out 0.5s;
