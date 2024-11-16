@@ -66,12 +66,11 @@ contactToggle(contactLink);
 contactToggle(iconToggler);
 
 const sectionToggle = getClass('section-toggle');
-const [aboutSectionToggle, projectSectionToggle, trainingSectionToggle] =
-	sectionToggle;
+const [projectSectionToggle, trainingSectionToggle] = sectionToggle;
 
 const sections = selectAll('section');
 
-const [aboutSection, projectSection, trainingSection] = sections;
+const [projectSection, trainingSection] = sections;
 
 //** Needs to be grouped in an object (maybe?)*/
 const sectionActive = 'section-active';
@@ -91,10 +90,9 @@ const toggleSection = (button, section) => {
 		}
 	});
 };
-toggleSection(aboutSectionToggle, aboutSection);
 
 const sectionLabels = getClass('section-label');
-const [aboutLabel, projectLabel, trainingLabel] = sectionLabels;
+const [projectLabel, trainingLabel] = sectionLabels;
 const spanContainer = getId('spanContainer');
 //??About Section Function here
 
