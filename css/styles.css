@@ -148,6 +148,10 @@ h5 {
 	justify-content: center;
 }
 
+#ProfileImage {
+	display: flex;
+}
+
 .main-title-wrapper {
 	flex-direction: column;
 	box-sizing: content-box;
@@ -169,10 +173,10 @@ h5 {
 	height: 340px;
 	width: 320px;
 	font-size: 10px;
-	text-align: justify;
 	overflow: hidden;
-	text-align: center;
 	font-size: 1em;
+	outline: var(--ol);
+	text-align: center;
 }
 
 .about-title-wrapper-active {

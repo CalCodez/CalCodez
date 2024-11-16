@@ -45,6 +45,15 @@ const [aboutLink, projectLink, trainingLink, mediumLink, contactLink] =
 
 //??About toggle Function
 
+const calImg = {
+	calvin1: { src: './assets/photos/Calvin/CalvinC_One.jpg', alt: 'Calvin One' },
+	calvin2: {
+		src: './assets/photos/Calvin/Calvin_Three.jpg',
+		alt: 'Calvin Two',
+	},
+};
+
+const { calvin1, calvin2 } = calImg;
 const mainTitleWrapper = select('.main-title-wrapper');
 const aboutTitleWrapper = select('.about-title-wrapper');
 
@@ -56,14 +65,23 @@ const aboutContainerToggle = (
 	const click = 'click';
 	const inactive = 'main-title-container-inactive';
 	const active = 'about-title-wrapper-active';
+	const imageContainer = select('.portfolio-image-container');
+	const img = createElement('img');
+	const profileImage = getId('profileImage');
 
 	toggler.addEventListener(click, function () {
 		if (!container1.classList.contains(inactive)) {
 			toggleClass(container1, inactive);
 			toggleClass(container2, active);
+			appendChild(imageContainer, img);
+
+			img.src = calvin2.src;
+			img.alt = calvin2.alt;
 		} else {
 			toggleClass(container1, inactive);
 			toggleClass(container2, active);
+			img.src = calvin1.src;
+			appendChild(imageContainer, img);
 		}
 	});
 };
