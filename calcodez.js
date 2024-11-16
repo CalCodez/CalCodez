@@ -40,7 +40,37 @@ menuToggler.addEventListener('click', function () {
 });
 
 const navLinks = getClass('nav-link');
-const [contactLink, projectLink, trainingLink, mediumLink] = navLinks;
+const [aboutLink, projectLink, trainingLink, mediumLink, contactLink] =
+	navLinks;
+
+//??About toggle Function
+
+const mainTitleWrapper = select('.main-title-wrapper');
+const aboutTitleWrapper = select('.about-title-wrapper');
+
+const aboutContainerToggle = (
+	toggler,
+	container1 = mainTitleWrapper,
+	container2 = aboutTitleWrapper
+) => {
+	const click = 'click';
+	const inactive = 'main-title-container-inactive';
+	const active = 'about-title-wrapper-active';
+
+	toggler.addEventListener(click, function () {
+		if (!container1.classList.contains(inactive)) {
+			toggleClass(container1, inactive);
+			toggleClass(container2, active);
+		} else {
+			toggleClass(container1, inactive);
+			toggleClass(container2, active);
+		}
+	});
+};
+
+aboutContainerToggle(userIcon);
+aboutContainerToggle(aboutLink);
+
 const icons = {
 	facebook: 'fa-facebook-active',
 	instagram: 'fa-instagram-active',

@@ -27,13 +27,13 @@ h5 {
 }
 
 .nav-link {
-	width: 80px;
-	height: 30px;
+	width: 60px;
+	height: 25px;
 	color: var(--cream-dark);
 	border: 2px outset var(--cream-dark);
 	border-radius: 8px;
 	box-shadow: 1px 1px 3px 2px #000;
-	font-size: 1em;
+	font-size: 0.8em;
 	font-family: 'BIENUG Trial', sans-serif;
 	letter-spacing: 1.5;
 }
@@ -148,8 +148,35 @@ h5 {
 	justify-content: center;
 }
 
+.main-title-wrapper {
+	flex-direction: column;
+	box-sizing: content-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-title-container-inactive {
+	display: none;
+}
+
 .portfolio-title-container h4 {
 	font-size: 30px;
+}
+
+.about-title-wrapper {
+	display: none;
+	height: 340px;
+	width: 320px;
+	font-size: 10px;
+	text-align: justify;
+	overflow: hidden;
+	text-align: center;
+	font-size: 1em;
+}
+
+.about-title-wrapper-active {
+	display: flex;
 }
 
 /* **Sections Styles */
