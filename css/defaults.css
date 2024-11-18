@@ -62,7 +62,7 @@ body {
 body {
 	display: flex;
 	box-shadow: 2px 2px 15px var(--cream);
-	height: auto;
+	height: 100%;
 	position: relative;
 	flex-direction: column;
 	align-items: center;
@@ -78,18 +78,19 @@ body {
 	border: 2px solid var(--gold);
 	position: absolute;
 	background-color: var(--gold);
-	display: none;
+	display: flex;
 	flex-direction: column;
 	right: 0;
-	transition: ease-in-out 0.5s;
-	z-index: 1;
+	transition: width ease 0.5s;
+	z-index: 3;
+	top: 0;
 }
 
 .active-menu {
 	width: 150px;
 	position: absolute;
 	text-align: center;
-	transition: ease-in 0.5s;
+	transition: width ease 1s;
 	background-color: var(--cranberry-dark);
 }
 

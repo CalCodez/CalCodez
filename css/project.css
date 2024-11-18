@@ -1,0 +1,55 @@
+.project-logo-container {
+	width: 100%;
+	height: 450px;
+	position: relative;
+	margin-bottom: 80px;
+	outline: var(--ol);
+}
+
+.project-logo-container > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	animation: flicker-in-2 4s linear both;
+}
+
+.project-contact-container {
+	display: none;
+}
+
+.project-contact-container-active {
+	display: flex;
+	width: 200px;
+	height: 350px;
+	position: absolute;
+	border: 2px outset var(--cream-dark);
+	right: 100px;
+	top: 100px;
+	background: var(--cranberry-dark-transparent);
+	z-index: 2;
+	flex-direction: column;
+	text-align: justify;
+	justify-content: space-evenly;
+	padding: 8px;
+}
+
+.project-contact-container-active li {
+	width: 70%;
+	height: fit-content;
+	color: var(--cream-dark);
+	font-size: 1.5em;
+	justify-content: flex-start;
+}
+
+.project-contact-container-active a {
+	color: var(--cream-dark);
+}
+
+.project-contact-container-active li:hover {
+	transform: scale(1.3);
+	background: var(--cream-dark);
+}
+
+.project-contact-container-active li:hover a {
+	color: var(--cranberry-dark);
+}
