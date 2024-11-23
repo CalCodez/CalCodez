@@ -51,7 +51,7 @@ const toggleContactContainer = (toggler, container = contactContainer) => {
 
 	document.addEventListener('keydown', function (event) {
 		if (event.key === 'Escape' && container.classList.contains(activeContact)) {
-			toggleClass(container, active);
+			toggleClass(container, activeContact);
 		}
 		{
 		}
