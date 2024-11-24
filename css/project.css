@@ -76,7 +76,7 @@
 .panel-container {
 	width: 30%;
 	height: 100%;
-	border: 2px ridge var(--cream-dark);
+	border: 2px inset var(--cream-dark);
 	flex-direction: column;
 	position: relative;
 }
@@ -134,7 +134,7 @@
 .project-details-container {
 	width: 65%;
 	height: 100%;
-	border: 2px ridge var(--cream-dark);
+	/*border: 2px ridge var(--cream-dark);*/
 	flex-direction: column;
 	justify-content: space-around;
 }

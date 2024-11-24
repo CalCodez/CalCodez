@@ -121,7 +121,7 @@ snapChatToggler.addEventListener(click, function () {
 	});
 });
 
-//**Project Disaply Var and Functions */
+//**Project Display Var and Functions */
 const projects = {
 	saas: {
 		src: './assets/project_card_images/SaaS.png',
