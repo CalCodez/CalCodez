@@ -205,9 +205,77 @@ const projects = {
 		href: '#',
 	},
 
-	default: {
+	defaultImg: {
 		src: './assets/logos/company/CalCodez2.png',
 		alt: 'Cal Codez',
 		description: `Select Project From Project Panel`,
 	},
 };
+
+const {
+	saas,
+	pokemon,
+	calTube,
+	responsive,
+	login,
+	favz,
+	tribute,
+	google,
+	defaultImg,
+} = projects;
+
+const projectButtons = getClass('project-buttons');
+const [
+	saasButton,
+	pokemonButton,
+	caltubeButton,
+	responsiveButton,
+	loginButton,
+	favzButton,
+	tributeButton,
+	googleButton,
+] = projectButtons;
+
+const img = getId('project-image');
+const description = getId('project-description');
+const projectLink = getId('project-link');
+
+const toggleProjects = (button, projectImg, text, link) => {
+	const click = 'click';
+	button.addEventListener(click, function () {
+		img.src = projectImg;
+		textContent(description, text);
+		projectLink.style.visibility = 'visible';
+		projectLink.href = link;
+	});
+
+	document.addEventListener('keydown', function (event) {
+		if ((event.key = 'Escape')) {
+			img.src = defaultImg.src;
+			textContent(description, defaultImg.description);
+			projectLink.style.visibility = 'hidden';
+		}
+	});
+};
+
+toggleProjects(saasButton, saas.src, saas.description, saas.href);
+toggleProjects(pokemonButton, pokemon.src, pokemon.description, pokemon.href);
+toggleProjects(caltubeButton, calTube.src, calTube.description, calTube.href);
+toggleProjects(
+	responsiveButton,
+	responsive.src,
+	responsive.description,
+	responsive.href
+);
+toggleProjects(loginButton, login.src, login.description, login.href);
+toggleProjects(favzButton, favz.src, favz.description, favz.href);
+toggleProjects(tributeButton, tribute.src, tribute.description, tribute.href);
+toggleProjects(googleButton, google.src, google.description, google.href);
+
+const resetProjects = getId('reset-projects');
+
+resetProjects.addEventListener('click', function () {
+	img.src = defaultImg.src;
+	textContent(description, defaultImg.description);
+	projectLink.style.visibility = 'hidden';
+});
