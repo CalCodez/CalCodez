@@ -132,6 +132,10 @@ const listDisplay = getId('list-display');
 
 //**Project Display Var and Functions */
 
+//Window width variable  cont windowWidth = window.innerWidth;
+
+// if(windowWidth <= varNum 767px)
+
 const toggleProjectContainers = (
 	toggler,
 	container1,
@@ -312,11 +316,10 @@ const [
 	googleButton,
 ] = projectButtons;
 
-const img = getId('project-image');
-const description = getId('project-description');
-const projectLink = getId('project-link');
-
 const toggleProjects = (button, projectImg, text, link) => {
+	const img = getId('project-image');
+	const description = getId('project-description');
+	const projectLink = getId('project-link');
 	const click = 'click';
 	button.addEventListener(click, function () {
 		img.src = projectImg;
@@ -351,6 +354,8 @@ toggleProjects(googleButton, google.src, google.description, google.href);
 const resetProjects = getId('reset-projects-button');
 
 resetProjects.addEventListener('click', function () {
+	const img = getId('project-image');
+
 	img.src = defaultImg.src;
 	textContent(description, defaultImg.description);
 	projectLink.style.visibility = 'hidden';
@@ -393,6 +398,43 @@ const [
 	googleLink,
 ] = projectCardLinks;
 
+const liImages = getClass('li-img');
+const liTitle = getClass('li-title');
+const liLink = getClass('li-link');
+
+const [
+	saasImgLi,
+	pokemonImgLi,
+	caltubeImgLi,
+	responsiveImgLi,
+	loginImgLi,
+	favzImgLi,
+	tributeImgLi,
+	googleImgLi,
+] = liImages;
+
+const [
+	saasTitleLi,
+	pokemonTitleLi,
+	caltubeTitleLi,
+	responsiveTitleLi,
+	loginTitleLi,
+	favzTitleLi,
+	tributeTitleLi,
+	googleTitleLi,
+] = liTitle;
+
+const [
+	saasLinkLi,
+	pokemonLinkLi,
+	caltubeLinkLi,
+	responsiveLinkLi,
+	loginLinkLi,
+	favzLinkLi,
+	tributeLinkLi,
+	googleLinkLi,
+] = liLink;
+
 const cardAndListAssignment = (
 	img,
 	imgAssignment,
@@ -414,6 +456,7 @@ cardAndListAssignment(
 	saasLink,
 	saas.href
 );
+
 cardAndListAssignment(
 	pokemonImg,
 	pokemon.src,
@@ -472,5 +515,75 @@ cardAndListAssignment(
 	googleTitle,
 	google.title,
 	googleLink,
+	google.href
+);
+
+cardAndListAssignment(
+	saasImgLi,
+	saas.src,
+	saasTitleLi,
+	saas.title,
+	saasLinkLi,
+	saas.href
+);
+
+cardAndListAssignment(
+	pokemonImgLi,
+	pokemon.src,
+	pokemonTitleLi,
+	pokemon.title,
+	pokemonLinkLi,
+	pokemon.href
+);
+cardAndListAssignment(
+	caltubeImgLi,
+	calTube.src,
+	caltubeTitleLi,
+	calTube.title,
+	caltubeLinkLi,
+	calTube.link
+);
+
+cardAndListAssignment(
+	responsiveImgLi,
+	responsive.src,
+	responsiveTitleLi,
+	responsive.title,
+	responsiveLinkLi,
+	responsive.href
+);
+
+cardAndListAssignment(
+	loginImgLi,
+	login.src,
+	loginTitleLi,
+	login.title,
+	loginLinkLi,
+	login.href
+);
+
+cardAndListAssignment(
+	favzImgLi,
+	favz.src,
+	favzTitleLi,
+	favz.title,
+	favzLinkLi,
+	favz.link
+);
+cardAndListAssignment(
+	tributeImgLi,
+	tribute.src,
+	tributeTitleLi,
+	tribute.title,
+	tributeLinkLi,
+	tribute.href
+);
+
+cardAndListAssignment(
+	googleImgLi,
+	google.src,
+	googleTitleLi,
+	google.title,
+	googleLinkLi,
 	google.href
 );
