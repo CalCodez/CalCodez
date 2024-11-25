@@ -121,9 +121,78 @@ snapChatToggler.addEventListener(click, function () {
 	});
 });
 
+//**Project Display vars and functions */
+
+const projectViewButtons = getClass('project-view-button');
+const [panelViewButton, cardViewButton, listViewButton] = projectViewButtons;
+
+const panelDisplay = getId('panel-display');
+const cardDisplay = getId('card-display');
+const listDisplay = getId('list-display');
+
 //**Project Display Var and Functions */
+
+const toggleProjectContainers = (
+	toggler,
+	container1,
+	container2,
+	button1,
+	container3,
+	button2
+) => {
+	const click = 'click';
+	const containerActive = 'project-container-active';
+	const displayButton = 'project-button-display';
+
+	toggler.addEventListener(click, function () {
+		if (
+			!container1.classList.contains(containerActive) &&
+			container2.classList.contains(containerActive)
+		) {
+			toggleClass(container2, containerActive);
+			toggleClass(container1, containerActive);
+			toggleClass(button1, displayButton);
+			toggleClass(toggler, displayButton);
+		} else if (
+			!container1.classList.contains(containerActive) &&
+			container3.classList.contains(containerActive)
+		) {
+			toggleClass(container3, containerActive);
+			toggleClass(container1, containerActive);
+			toggleClass(button2, displayButton);
+			toggleClass(toggler, displayButton);
+		}
+	});
+};
+
+toggleProjectContainers(
+	cardViewButton,
+	cardDisplay,
+	panelDisplay,
+	panelViewButton,
+	listDisplay,
+	listViewButton
+);
+toggleProjectContainers(
+	panelViewButton,
+	panelDisplay,
+	cardDisplay,
+	cardViewButton,
+	listDisplay,
+	listViewButton
+);
+toggleProjectContainers(
+	listViewButton,
+	listDisplay,
+	panelDisplay,
+	panelViewButton,
+	cardDisplay,
+	cardViewButton
+);
+
 const projects = {
 	saas: {
+		title: 'SaaS',
 		src: './assets/project_card_images/SaaS.png',
 		alt: 'SaaS',
 		description: `A fully featured website landing page. This was my first project that tested all my skills in HTML and
@@ -134,6 +203,7 @@ const projects = {
 		href: '#',
 	},
 	pokemon: {
+		title: 'Pokemon',
 		src: './assets/project_card_images/Pokemon.png',
 		alt: 'Pokemon Card Collection',
 		description: `A Pokémon card collection project. This project allows users to collect and release Pokémon by adding and
@@ -144,6 +214,7 @@ const projects = {
 		href: '#',
 	},
 	calTube: {
+		title: 'CalTube',
 		src: './assets/project_card_images/Caltube.png',
 		alt: 'CalTube',
 		description: `Youtube inspired clone featuring a selection of my favorite artists and videos. This project showcases
@@ -152,6 +223,7 @@ const projects = {
 		href: '#',
 	},
 	responsive: {
+		title: 'Responsive',
 		src: './assets/project_card_images/Responsive_website.png',
 		alt: 'Responsive Website',
 		description: `My first mobile-responsive project. I learned to style website elements to make them automatically
@@ -164,6 +236,7 @@ const projects = {
 	},
 
 	login: {
+		title: 'Login',
 		src: './assets/project_card_images/Social_Media.png',
 		alt: 'Social Media Logins',
 		description: `A social media login page clone project. I successfully created login pages for various platforms,
@@ -175,6 +248,7 @@ const projects = {
 	},
 
 	favz: {
+		title: 'My Favz',
 		src: './assets/project_card_images/My_Favz.png',
 		alt: 'My Favz',
 		description: `A beginner project displaying a list of things I favor and don't favor, with each topic providing 3 key
@@ -185,6 +259,7 @@ const projects = {
 		href: '#',
 	},
 	tribute: {
+		title: 'Tribute',
 		src: './assets/project_card_images/Aaliyah_tribute.png',
 		alt: 'Aaliyah Tribute Page',
 		description: `A tribute page dedicated to the late Aaliyah. This project features a detailed biography, a curated
@@ -195,6 +270,7 @@ const projects = {
 		href: '#',
 	},
 	google: {
+		title: 'Google',
 		src: './assets/project_card_images/Google.png',
 		alt: 'Google Home Page',
 		description: `A simple Google homepage clone built by studying an example, with functional links. The project involved
@@ -272,10 +348,129 @@ toggleProjects(favzButton, favz.src, favz.description, favz.href);
 toggleProjects(tributeButton, tribute.src, tribute.description, tribute.href);
 toggleProjects(googleButton, google.src, google.description, google.href);
 
-const resetProjects = getId('reset-projects');
+const resetProjects = getId('reset-projects-button');
 
 resetProjects.addEventListener('click', function () {
 	img.src = defaultImg.src;
 	textContent(description, defaultImg.description);
 	projectLink.style.visibility = 'hidden';
 });
+
+const projectCardImages = getClass('project-card-image');
+const projectCardTitles = getClass('project-card-title');
+const projectCardLinks = getClass('project-card-link');
+
+const [
+	saasImg,
+	pokemonImg,
+	caltubeImg,
+	responsiveImg,
+	loginImg,
+	favzImg,
+	tributeImg,
+	googleImg,
+] = projectCardImages;
+
+const [
+	saasTitle,
+	pokemonTitle,
+	caltubeTitle,
+	responsiveTitle,
+	loginTitle,
+	favzTitle,
+	tributeTitle,
+	googleTitle,
+] = projectCardTitles;
+
+const [
+	saasLink,
+	pokemonLink,
+	caltubeLink,
+	responsiveLink,
+	loginLink,
+	favzLink,
+	tributeLink,
+	googleLink,
+] = projectCardLinks;
+
+const cardAndListAssignment = (
+	img,
+	imgAssignment,
+	title,
+	titleAssignment,
+	link,
+	linkAssignment
+) => {
+	img.src = imgAssignment;
+	textContent(title, titleAssignment);
+	link.href = linkAssignment;
+};
+
+cardAndListAssignment(
+	saasImg,
+	saas.src,
+	saasTitle,
+	saas.title,
+	saasLink,
+	saas.href
+);
+cardAndListAssignment(
+	pokemonImg,
+	pokemon.src,
+	pokemonTitle,
+	pokemon.title,
+	pokemonLink,
+	pokemon.href
+);
+cardAndListAssignment(
+	caltubeImg,
+	calTube.src,
+	caltubeTitle,
+	calTube.title,
+	caltubeLink,
+	calTube.link
+);
+
+cardAndListAssignment(
+	responsiveImg,
+	responsive.src,
+	responsiveTitle,
+	responsive.title,
+	responsiveLink,
+	responsive.href
+);
+
+cardAndListAssignment(
+	loginImg,
+	login.src,
+	loginTitle,
+	login.title,
+	loginLink,
+	login.href
+);
+
+cardAndListAssignment(
+	favzImg,
+	favz.src,
+	favzTitle,
+	favz.title,
+	favzLink,
+	favz.link
+);
+cardAndListAssignment(
+	tributeImg,
+	tribute.src,
+	tributeTitle,
+	tribute.title,
+	tributeLink,
+	tribute.href
+);
+
+cardAndListAssignment(
+	googleImg,
+	google.src,
+	googleTitle,
+	google.title,
+	googleLink,
+	google.href
+);

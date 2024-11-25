@@ -18,7 +18,7 @@
 	--turquoise-dark: #00eaec;
 	--turquoise-light: #a1feff;
 	--turquoise: #0efdff;
-	--true-black: #000;
+	--black: #000;
 	--black-transparent: #000000d4;
 	--devslopes-black: #303136;
 	--devslopes-logo-red: #db5252;
@@ -36,7 +36,7 @@
 li,
 a {
 	text-decoration: 0;
-	list-style: 0;
+	list-style: none;
 	cursor: pointer;
 }
 
@@ -134,14 +134,20 @@ body {
 	flex-wrap: wrap;
 }
 
+h1,
 h5,
 h4 {
-	font-size: 4em;
+	font-size: 3em;
 	color: var(--cream-dark);
 	font-family: 'BIENUG Trial', sans-serif;
-	letter-spacing: 10;
+	letter-spacing: 2;
 	text-shadow: 5px 5px 10px black;
 	text-decoration: underline var(--cream-dark);
+	letter-spacing: 2;
+}
+
+h1 {
+	letter-spacing: 10;
 }
 
 .header-logo-container,
