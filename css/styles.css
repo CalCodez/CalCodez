@@ -1,26 +1,3 @@
-.fa-facebook-active {
-	right: 75px;
-	text-shadow: 5px 5px 5px black;
-	animation: Social 2s ease 0s 1 normal forwards;
-}
-
-.fa-instagram-active {
-	right: 30px;
-	top: -70px;
-	animation: Social 2s ease 0s 1 normal forwards;
-}
-
-.fa-snapchat-active {
-	top: -70px;
-	left: 35px;
-	animation: Social 2s ease 0s 1 normal forwards;
-}
-
-.fa-threads-active {
-	left: 80px;
-	animation: Social 2s ease 0s 1 normal forwards;
-}
-
 /* **Profile  */
 
 .profile-container {
@@ -57,9 +34,9 @@
 
 .portfolio-title-container {
 	color: var(--cream-dark);
-	line-height: 2;
-	font-family: 'BIENUG Trial', sans-serif;
-	letter-spacing: 2.5;
+	line-height: 1;
+	/*font-family: 'BIENUG Trial', sans-serif;*/
+	letter-spacing: 2;
 	text-shadow: 5px 5px 5px black;
 	justify-content: center;
 }
@@ -81,9 +58,29 @@
 	display: none;
 }
 
+.about-title-wrapper {
+	display: none;
+	height: 340px;
+	width: 320px;
+	font-size: 10px;
+	overflow: hidden;
+	font-size: 1em;
+	text-align: center;
+	color: var(--gold);
+}
+
+#about-text {
+	color: var(--cream-dark);
+}
+
+.about-title-wrapper-active {
+	display: flex;
+}
+
 .portfolio-title-container h4 {
 	font-size: 30px;
 	width: 100%;
+	margin-bottom: 20px;
 }
 .social-container {
 	width: 280px;
@@ -98,22 +95,19 @@
 	margin-bottom: -80px;
 }
 
-.social-container a {
+.social-container .social-icons {
 	color: var(--cream-dark);
 }
 
-.about-title-wrapper {
-	display: none;
-	height: 340px;
-	width: 320px;
-	font-size: 10px;
-	overflow: hidden;
-	font-size: 1em;
-	text-align: center;
+.social-container .social-icons-active {
+	font-size: 35px;
+	text-shadow: 2px 2px 2px var(--blue-dark);
+	color: var(--turquoise);
 }
 
-.about-title-wrapper-active {
-	display: flex;
+.contact-link:hover,
+.contact-link-active:hover {
+	transform: scale(1.2);
 }
 
 .snapCode {

@@ -16,7 +16,8 @@ const menuToggler = getId('main-toggler');
 const mainMenu = getId('menu');
 const sideBarIcons = getClass('side-bar-icons');
 const activeIcons = getClass('active-icons');
-const [userIcon, projectIcon, mediumIcon, trainingIcon] = sideBarIcons;
+const [userIcon, projectIcon, mediumIcon, trainingIcon, contactIcon] =
+	sideBarIcons;
 
 menuToggler.addEventListener('click', function () {
 	const active = 'active-menu';
@@ -43,6 +44,28 @@ const navLinks = getClass('nav-link');
 const [aboutLink, projectLink, trainingLink, mediumLink, contactLink] =
 	navLinks;
 
+const socialIcons = getClass('social-icons');
+
+const toggleSocialIcons = (toggler) => {
+	const click = 'click';
+	const activeIcons = 'social-icons-active';
+
+	toggler.addEventListener(click, function () {
+		for (let i of socialIcons) {
+			if (!i.classList.contains(activeIcons)) {
+				toggleClass(i, activeIcons);
+			} else {
+				toggleClass(i, activeIcons);
+			}
+		}
+	});
+};
+
+toggleSocialIcons(contactLink);
+toggleSocialIcons(contactIcon);
+
+//??Contact Toggle Function
+
 //??About toggle Function
 
 const calImg = {
@@ -50,6 +73,21 @@ const calImg = {
 	calvin2: {
 		src: './assets/photos/Calvin/Calvin_Three.jpg',
 		alt: 'Calvin Two',
+		text: `I specialize in designing user-friendly websites that are visually appealing and optimized for
+performance.
+My approach
+to web design is to blend creativity with technical expertise, ensuring that each site I create is
+unique,
+engaging, and
+effective. Whether you need a brand-new website or a redesign of your existing one, I am dedicated to
+delivering
+high-quality results that align with your vision and goals.Currently, I am studying Web Development at
+DevSlopes Academy, where I am honing my skills to offer
+professional website
+design services. My goal is to help businesses and individuals create stunning, functional websites that
+not
+only meet
+their needs but also captivate their audiences.`,
 	},
 };
 
@@ -66,11 +104,14 @@ const aboutContainerToggle = (
 	const inactive = 'main-title-container-inactive';
 	const active = 'about-title-wrapper-active';
 	const profileImage = getId('profileImage');
+	const aboutText = getId('about-text');
 
 	toggler.addEventListener(click, function () {
 		if (!container1.classList.contains(inactive)) {
 			toggleClass(container1, inactive);
 			toggleClass(container2, active);
+			textContent(aboutText, calvin2.text);
+			console.log(aboutText);
 
 			profileImage.src = calvin2.src;
 			profileImage.alt = calvin2.alt;
