@@ -55,6 +55,15 @@
 }
 
 /* **Project Projects Container */
+#project-header {
+	display: block;
+	color: var(--gold);
+	font-size: 5em;
+	width: 100%;
+	text-align: center;
+	font-family: 'BIENUG Trial', sans-serif;
+	margin-bottom: 10px;
+}
 
 .project-view-container {
 	width: 320px;
@@ -62,11 +71,16 @@
 	justify-content: space-evenly;
 	border: 5px groove var(--gold);
 	margin-bottom: 20px;
-	background-color: var(--gold);
+	/*background-color: var(--gold);*/
 	border-radius: 8px;
 }
 
-.project-view-container button {
+.project-view-container h6 {
+	color: var(--gold);
+	font-size: 1.3em;
+}
+
+.project-view-container .project-view-button {
 	width: 100px;
 	height: 40px;
 	border-radius: 8px;
@@ -306,26 +320,23 @@
 
 .list-display-container {
 	width: 380px;
-	height: auto;
+	height: 500px;
 	background-color: var(--cranberry-dark-transparent);
 	border: 5px ridge var(--gold);
 	display: none;
 	flex-direction: column;
-	padding: 8px;
-	row-gap: 10px;
+	row-gap: 20px;
 	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 380px 0 10px 0;
 }
 
-.list-display-container li {
+.list-display-container .li-div {
 	height: 100px;
 	width: 100%;
 	border: 2px groove var(--gold);
 	justify-content: space-between;
 	padding: 10px;
-}
-
-.list-display-container li:hover {
-	transform: scale(1.1);
 }
 
 .list-display-container .li-img-container {
@@ -343,7 +354,7 @@
 	color: var(--gold);
 	width: 20%;
 	height: 100%;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 .list-display-container .li-btn-container {
@@ -357,6 +368,12 @@
 	background-color: var(--gold);
 	color: var(--cranberry-dark);
 	border-radius: 8px;
+}
+
+.list-display-container .li-div:hover,
+.li-link:hover {
+	transform: scale(1.1);
+	background-color: var(--cranberry-dark);
 }
 
 .project-container-active {

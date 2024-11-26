@@ -131,10 +131,13 @@ const cardDisplay = getId('card-display');
 const listDisplay = getId('list-display');
 
 //**Project Display Var and Functions */
+const windowWidth = window.innerWidth;
+const maxWidth = 1366;
 
-//Window width variable  cont windowWidth = window.innerWidth;
-
-// if(windowWidth <= varNum 767px)
+if (windowWidth <= maxWidth) {
+	panelDisplay.style.display = 'none';
+	panelViewButton.style.display = 'none';
+}
 
 const toggleProjectContainers = (
 	toggler,
