@@ -93,7 +93,6 @@ const aboutContainerToggle = (
 			toggleClass(container1, inactive);
 			toggleClass(container2, active);
 			textContent(aboutText, calvin2.text);
-			console.log(aboutText);
 
 			profileImage.src = calvin2.src;
 			profileImage.alt = calvin2.alt;
@@ -114,17 +113,13 @@ const toggleSocialIcons = (toggler) => {
 
 	toggler.addEventListener(click, function () {
 		for (let icons of socialIcons) {
-			if (
-				!aboutTitleWrapper.classList.contains(active) &&
-				!icons.classList.contains(activeIcons)
-			) {
+			if (!aboutTitleWrapper.classList.contains(active)) {
 				toggleClass(icons, activeIcons);
 			} else if (aboutTitleWrapper.classList.contains(active)) {
 				toggleClass(aboutTitleWrapper, active);
 				toggleClass(mainTitleWrapper, inactive);
 				toggleClass(icons, activeIcons);
-			} else {
-				toggleClass(icons, activeIcons);
+				console.log(icons);
 			}
 		}
 	});
