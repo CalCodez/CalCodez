@@ -46,24 +46,6 @@ const [aboutLink, projectLink, trainingLink, mediumLink, contactLink] =
 
 const socialIcons = getClass('social-icons');
 
-const toggleSocialIcons = (toggler) => {
-	const click = 'click';
-	const activeIcons = 'social-icons-active';
-
-	toggler.addEventListener(click, function () {
-		for (let i of socialIcons) {
-			if (!i.classList.contains(activeIcons)) {
-				toggleClass(i, activeIcons);
-			} else {
-				toggleClass(i, activeIcons);
-			}
-		}
-	});
-};
-
-toggleSocialIcons(contactLink);
-toggleSocialIcons(contactIcon);
-
 //??Contact Toggle Function
 
 //??About toggle Function
@@ -123,6 +105,33 @@ const aboutContainerToggle = (
 		}
 	});
 };
+
+const toggleSocialIcons = (toggler) => {
+	const click = 'click';
+	const activeIcons = 'social-icons-active';
+	const active = 'about-title-wrapper-active';
+	const inactive = 'main-title-container-inactive';
+
+	toggler.addEventListener(click, function () {
+		for (let icons of socialIcons) {
+			if (
+				!aboutTitleWrapper.classList.contains(active) &&
+				!icons.classList.contains(activeIcons)
+			) {
+				toggleClass(icons, activeIcons);
+			} else if (aboutTitleWrapper.classList.contains(active)) {
+				toggleClass(aboutTitleWrapper, active);
+				toggleClass(mainTitleWrapper, inactive);
+				toggleClass(icons, activeIcons);
+			} else {
+				toggleClass(icons, activeIcons);
+			}
+		}
+	});
+};
+
+toggleSocialIcons(contactLink);
+toggleSocialIcons(contactIcon);
 
 aboutContainerToggle(userIcon);
 aboutContainerToggle(aboutLink);
