@@ -28,7 +28,7 @@
 
 .logo-css {
 	right: 46%;
-	top: -10%;
+	top: 10%;
 	transform: rotate(0deg);
 	animation: floatingIcons 2s both 2.1s;
 }

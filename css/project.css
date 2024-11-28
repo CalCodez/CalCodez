@@ -1,5 +1,5 @@
 .project-logo-container {
-	width: 100%;
+	width: 90%;
 	height: 450px;
 	position: relative;
 	margin-bottom: 80px;
@@ -11,6 +11,27 @@
 	height: 100%;
 	object-fit: cover;
 	animation: flicker-in-2 4s linear both;
+}
+
+.logo-handler {
+	background-color: var(--cranberry-dark-transparent);
+	border: 0.125rem solid var(--cream-dark);
+	border-radius: 50%;
+	box-shadow: 1px 2px 10px 1px var(--cream-light);
+	display: flex;
+	height: 80px;
+
+	position: absolute;
+	width: 80px;
+	z-index: 1;
+	flex-shrink: 1;
+}
+
+.logo-handler img {
+	height: 50px;
+	object-fit: cover;
+	position: absolute;
+	width: 50px;
 }
 
 .project-contact-container {

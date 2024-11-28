@@ -16,7 +16,7 @@
 .portfolio-image-container,
 .portfolio-title-container {
 	height: 400px;
-	width: 320px;
+	width: 340px;
 	flex-direction: column;
 }
 
@@ -63,7 +63,7 @@
 	height: 340px;
 	width: 320px;
 	font-size: 10px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	font-size: 1em;
 	text-align: center;
 	color: var(--gold);
