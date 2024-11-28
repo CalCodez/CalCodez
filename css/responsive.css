@@ -12,6 +12,9 @@
 		display: none;
 		outline: var(--ol);
 	}
+	.main-menu {
+		display: flex;
+	}
 
 	.profile-container {
 		width: 80vh;

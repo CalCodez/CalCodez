@@ -105,8 +105,8 @@
 	color: var(--turquoise);
 }
 
-.contact-link:hover,
-.contact-link-active:hover {
+.social-icons:hover,
+.social-icons-active:hover {
 	transform: scale(1.2);
 }
 

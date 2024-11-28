@@ -25,14 +25,12 @@ menuToggler.addEventListener('click', function () {
 
 	if (!mainMenu.classList.contains(active)) {
 		toggleClass(mainMenu, active);
-		menuToggler.style.color = 'var(--gold)';
 
 		for (let links of sideBarIcons) {
 			toggleClass(links, iconsActive);
 		}
 	} else {
 		toggleClass(mainMenu, active);
-		menuToggler.style.color = 'var(--cranberry-dark)';
 
 		for (let links of sideBarIcons) {
 			toggleClass(links, iconsActive);
