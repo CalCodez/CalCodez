@@ -19,6 +19,13 @@ const activeIcons = getClass('active-icons');
 const [userIcon, projectIcon, mediumIcon, trainingIcon, contactIcon] =
 	sideBarIcons;
 
+const body = select('body');
+const windowWidth = window.innerWidth;
+const maxWindowWidth = 1133;
+if (windowWidth <= maxWindowWidth) {
+	body.style.height = 'fit-content';
+}
+
 menuToggler.addEventListener('click', function () {
 	const active = 'active-menu';
 	const iconsActive = 'side-bar-icons-active';

@@ -64,7 +64,7 @@
 	}
 }
 
-@media (max-width: 481px) {
+@media (max-width: 500px) {
 	#project-body {
 		width: 95%;
 		justify-self: center;
@@ -111,5 +111,15 @@
 	.project-logo-container .logo-handler img {
 		width: 60%;
 		height: 60%;
+	}
+
+	.project-contact-container {
+		right: 50px;
+		width: 150px;
+	}
+
+	.project-contact-container li {
+		width: 100%;
+		justify-content: center;
 	}
 }
