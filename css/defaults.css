@@ -54,7 +54,7 @@ a {
 	align-items: center;
 }
 html {
-	background-color: var(--cranberry-dark);
+	background-color: var(--gold-dark);
 }
 
 html,
@@ -63,7 +63,7 @@ body {
 }
 body {
 	display: flex;
-	box-shadow: 2px 2px 15px var(--cream);
+	box-shadow: 2px 2px 10px 5px var(--cranberry-dark-transparent);
 	height: 100%;
 	position: relative;
 	flex-direction: column;
@@ -73,6 +73,7 @@ body {
 	width: 100%;
 	max-width: 1400px;
 	background-color: var(--cranberry-dark);
+	border-radius: 10px;
 }
 
 /* **Side Bar Menu */
