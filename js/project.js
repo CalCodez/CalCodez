@@ -62,14 +62,12 @@ const toggleContactContainer = (toggler, container = contactContainer) => {
 menuToggler.addEventListener(click, function () {
 	if (!mainMenu.classList.contains(activeMenu)) {
 		toggleClass(mainMenu, activeMenu);
-		menuToggler.style.color = 'var(--gold)';
 
 		for (let links of sideBarIcons) {
 			toggleClass(links, iconsActive);
 		}
 	} else {
 		toggleClass(mainMenu, activeMenu);
-		menuToggler.style.color = 'var(--cranberry-dark)';
 
 		for (let links of sideBarIcons) {
 			toggleClass(links, iconsActive);
@@ -82,7 +80,6 @@ menuToggler.addEventListener(click, function () {
 
 			for (let links of sideBarIcons) {
 				toggleClass(links, iconsActive);
-				menuToggler.style.color = 'var(--cranberry-dark)';
 			}
 		}
 	});

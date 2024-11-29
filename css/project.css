@@ -1,9 +1,9 @@
 .project-logo-container {
-	width: 90%;
+	width: 80%;
 	height: 450px;
 	position: relative;
 	margin-bottom: 80px;
-	box-shadow: 2px 2px 20px 2px var(--cream-dark);
+	box-shadow: 2px 2px 20px 2px var(--gold);
 }
 
 .project-logo-container > img {
@@ -17,7 +17,7 @@
 	background-color: var(--cranberry-dark-transparent);
 	border: 0.125rem solid var(--cream-dark);
 	border-radius: 50%;
-	box-shadow: 1px 2px 10px 1px var(--cream-light);
+	box-shadow: 1px 2px 10px 1px var(--gold);
 	display: flex;
 	height: 80px;
 

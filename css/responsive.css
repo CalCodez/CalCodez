@@ -1,21 +1,14 @@
-@media (max-width: 768px) {
-	body {
-		height: fit-content;
-	}
-
-	.header-container {
-		justify-content: center;
-		row-gap: 15px;
-	}
-
+@media (max-width: 1135px) {
 	.header-container {
 		display: none;
-		outline: var(--ol);
 	}
+
 	.main-menu {
 		display: flex;
 	}
+}
 
+@media (max-width: 768px) {
 	.profile-container {
 		width: 80vh;
 		margin-top: 50px;
@@ -40,6 +33,10 @@
 		word-spacing: 0.5;
 		font-weight: 600;
 		line-height: 1.1;
+	}
+
+	.project-contact-container {
+		top: 0;
 	}
 
 	.project-logo-container .logo-html {
@@ -72,16 +69,9 @@
 		width: 95%;
 		justify-self: center;
 	}
-	.main-menu {
-		display: flex;
-	}
 
 	h5 {
 		font-size: 3rem;
-	}
-
-	.nav-container {
-		display: none;
 	}
 
 	.profile-container {

@@ -1,24 +1,3 @@
-.logo-handler {
-	background-color: var(--cranberry-dark-transparent);
-	border: 0.125rem solid var(--cream-dark);
-	border-radius: 50%;
-	box-shadow: 1px 2px 10px 1px var(--cream-light);
-	display: flex;
-	height: 80px;
-
-	position: absolute;
-	width: 80px;
-	z-index: 1;
-	flex-shrink: 1;
-}
-
-.logo-handler img {
-	height: 50px;
-	object-fit: cover;
-	position: absolute;
-	width: 50px;
-}
-
 .logo-html {
 	left: 11%;
 	top: 2%;
