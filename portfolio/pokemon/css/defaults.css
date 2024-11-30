@@ -1,0 +1,151 @@
+:root {
+	--black: #000000ca;
+	--white: #e1e1e1;
+	--poke-red: #ff0000;
+	--poke-darkRed: #cc0000;
+	--poke-blue: #0000a0;
+	--poke-darkBlue: #020253;
+	--poke-darkBlue-transparent: #020253c2;
+	--poke-lightBlue: #2a75bb;
+	--pickachu: #ffcb05;
+	--yellow-border: #f5c525;
+	--yellow-shadow: #c7a008;
+	--yellow-transparent: #c7a10895;
+	--poke-darkGray: #444444;
+	--platinum: #999999;
+	--poke-silver: #c0c0c0;
+
+	/* EXTRA COLORS */
+	--alpha-sapphire: #1768d1;
+	--crystal: #4fd9ff;
+	--colloseum: #b6cae4;
+}
+
+html {
+	position: relative;
+}
+
+.font-container {
+	font-family: 'Pokemon Solid', sans-serif;
+	font-family: 'Fight Side', sans-serif;
+	font-family: 'Activity Saturday', sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	place-content: center;
+	/*background-color: #000;*/
+	z-index: -1;
+	background-position: center;
+	position: relative;
+	background-image: url('https://cdn12.picryl.com/photo/2016/12/31/pokemon-planet-smartphone-639b5c-1024.jpg');
+	background-size: cover;
+}
+
+.body-content-wrapper {
+	display: flex;
+	place-self: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	height: 100%;
+	max-width: 66.25rem;
+	padding-bottom: 0.625rem;
+}
+
+a,
+li {
+	text-decoration: none;
+}
+
+.button-container {
+	display: flex;
+	height: auto;
+	margin-top: 0.3125rem;
+	width: inherit;
+	place-content: center;
+}
+
+.btn {
+	display: flex;
+	place-content: center;
+	background-color: var(--poke-blue);
+	color: var(--pickachu);
+	height: 0.5rem;
+	width: 3.125rem;
+	border-radius: 1.25rem;
+	padding: 0.625rem;
+	margin: 0.3125rem 0;
+	align-items: center;
+	gap: 0.1563rem;
+	font-size: 0.375rem;
+	border-left-color: 0.1875rem solid var(--poke-red);
+	border-top-color: 0.1875rem solid var(--pickachu);
+	cursor: pointer;
+}
+
+.nav-btn {
+	height: 20px;
+	width: 80px;
+	border: 2px outset var(--pickachu);
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.btn:hover {
+	background-color: var(--poke-darkBlue-transparent);
+	border-color: var(--poke-red);
+	color: var(--poke-red);
+	transform: scale(1.1);
+}
+
+.btn img {
+	width: 0.625rem;
+	height: 0.625rem;
+}
+
+.sort-container {
+	place-self: center;
+	display: flex;
+	margin-bottom: 1.25rem;
+	gap: 1.25rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	height: auto;
+	margin: -0.625rem 0 1.25rem 0;
+	line-height: 0;
+	padding-top: 0;
+}
+
+.sort-container .sort-btn {
+	height: 1.875rem;
+	width: 5rem;
+	font-size: 0.625rem;
+	border: 0.125rem solid white;
+	border: 0.125rem solid var(--poke-red);
+	box-shadow: 0.0625rem 0.0625rem 0.0625rem 0.0313rem var(--poke-lightBlue);
+}
+
+.card-hr {
+	border: 0.125rem solid var(--pickachu);
+	width: 99%;
+	margin-bottom: -0.3125rem;
+}
+
+.section-hr {
+	border: 5px ridge var(--pickachu);
+	width: 90vw;
+	margin: 3.125rem 0;
+	place-self: center;
+}
+
+.sort-count-hr {
+	border: 0.3125rem groove var(--poke-lightBlue);
+	border-radius: 3.125rem;
+	width: 99%;
+	margin: 0.625rem 0;
+	place-self: center;
+}

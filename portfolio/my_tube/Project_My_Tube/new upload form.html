@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CalTube | Upload NewVideo</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/defaults.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+        <link rel="stylesheet" href="./css/animation.css">
+    </head>
+
+    <body class="new-form">
+        <i class="menu-toggler-mr fa-solid fa-bars" data-open="modal-menu"></i>
+
+        <div class="main-menu-container">
+            <div class="menu-toggler-container"><i id="menu-toggler" class="fa-solid fa-bars"
+                    data-open="modal-menu"></i></div>
+            <div class="main-menu-list-wrapper">
+                <li><a href="./main.html"><i class="fa-solid fa-house"></i><br>Home</a>
+                </li>
+                <hr>
+                <li><a href="./collections/female_artist.html"><i class="fa-solid fa-venus"></i><br>Female Artist</a>
+                </li>
+                <li><a href="./collections/male_artist.html"><i class="fa-solid fa-mars"></i><br>Male Artist</a></li>
+                <li><a href="./collections/group_artist.html"><i class="fa-solid fa-user-group"></i><br>Group Artist</a>
+                </li>
+                <hr>
+                <li><a href="./collections/all_artist.html"><i class="fa-solid fa-border-all"></i><br>All Artist</a>
+                </li>
+
+            </div>
+        </div>
+        <div class="main-body-container">
+            <div class="header-bar-container">
+                <div class="logo-search-user-container">
+                    <div class="logo-continaer">
+                        <img src="./calTubeAssests/logos/caltubelogo_1.png" alt="caltube logo" />
+                    </div>
+                    <div class="search-bar-container">
+                        <div class="search-icon-container">
+                            <input type="text" placeholder="SEARCH" />
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="mic-sign-in-handler">
+                        <div class="mic-container">
+                            <i class="fa-solid fa-microphone"></i>
+                        </div>
+                        <div class="sign-in-container">
+                            <a class="sign-button-like" href="/project.html#projectDisplayContainer"><i
+                                    class="fa-solid fa-user"></i>EXIT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="link-bar-container">
+                    <marquee behavior="slide" direction="up">
+                        <h2>UPLOAD NEW VIDEO</h2>
+                    </marquee>
+                </div>
+            </div>
+            <!-- ++ -->
+            <div class="video-contianer-body">
+                <div class="upload-container-body">
+                    <div class="upload-header-container">
+                        <p>New Upload From</p>
+                        <div class="upload-icon-wrapper">
+                            <div class="upload-chat-icon">
+                                <i class="fa-brands fa-rocketchat"></i>
+                            </div>
+                            <div class="upload-x-icon">
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <form action="#">
+                        <textarea name="video-title" id="upload-video-title" placeholder="Title Required"></textarea>
+                        <textarea name=" video-description" id="upload-video-description"
+                            placeholder="Descritpion"></textarea>
+                        <select name="playlist-select" id="playlist-select" placeholder="Choose Playlist">
+                            <option value="Collection Catagorey">Select Collection</option>
+                            <option value="Female Artist">Female Artist</option>
+                            <option value="Male Artist">Male Artist</option>
+                            <option value="Group Artist">Group Artist</option>
+                        </select>
+                    </form>
+                    <div class="upload-footer-container">
+                        <div class="upload-footer-icon-container">
+                            <i class="fa-solid fa-upload"></i>
+                            <i class="fa-solid fa-sd-card"></i>
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+                        <div class="upload-footer-btn-contianer">
+                            <button>Upload Video</button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                </di>
+            </div>
+            <div class="full-site-modal page-block modal" id="modal-menu" data-animation="zoomInOut"
+                data-close="page-block">
+                <div class="main-menu-container">
+                    <div class="menu-toggler-container"><i data-close="modal-menu" id="menu-toggler"
+                            class="fa-solid fa-bars"></i>
+                        <div class="logo-continaer">
+                            <img src="./calTubeAssests/logos/caltubelogo_1.png" alt="caltube logo">
+                        </div>
+                    </div>
+                    <div class="main-menu-list-wrapper">
+                        <li><i class="fa-solid fa-house"></i><a href="./main.html"> Home</a></li>
+
+                        <li><i class="fa-solid fa-border-all"></i><a href="./collections/all_artist.html"> All
+                                Artist</a>
+                        </li>
+                        <li><i class="fa-solid fa-venus"></i><a href="./collections/female_artist.html">
+                                Female
+                                Artist</a></li>
+                        <li><i class="fa-solid fa-mars"></i><a href="./collections/male_artist.html">
+                                Male Artist</a>
+                        </li>
+                        <li><i class="fa-solid fa-user-group"></i><a href="./collections/group_artist.html"> Group
+                                Artist</a>
+                        </li>
+                        <li><i class="fa-solid fa-upload"></i><a href="new upload form.html">Upload NewVideo</a></li>
+                        <hr>
+                        <li><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com"> Youtube</a></li>
+                        <li><i class="fa-solid fa-font-awesome"></i>
+                            <a href="https://www.fontawesome.com">Font Awesome</a>
+                        </li>
+                        <li><i class="fa-brands fa-google"></i><a href="https://images.google.com/">Google</a></li>
+                        <li><i class="fa-solid fa-person-running"></i><a href="/project.html#projectDisplayContainer">
+                                EXIT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>

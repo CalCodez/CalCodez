@@ -215,7 +215,7 @@ const projects = {
               their favorite cards. The favorites section displays the total number of cards currently in their
               collection. The
               project also tallies common skills among the displayed Pokémon.`,
-		href: '#',
+		href: '/portfolio/pokemon/pokemon.html',
 	},
 	calTube: {
 		title: 'CalTube',
@@ -224,7 +224,7 @@ const projects = {
 		description: `Youtube inspired clone featuring a selection of my favorite artists and videos. This project showcases
             female, male,
             and group artists, along with artist pages that include a sub collection of videos from similar artists.`,
-		href: '#',
+		href: '/portfolio/my_tube/Project_My_Tube/main.html',
 	},
 	responsive: {
 		title: 'Responsive',

@@ -1,0 +1,349 @@
+@media (max-width: 1366px) {
+	.main-menu-list-wrapper li {
+		font-size: 0.8em;
+	}
+
+	.video-container {
+		width: 250px;
+	}
+
+	.video-container .video-btn-container {
+		font-size: 0.8em;
+	}
+
+	.main-page-footer-container .reference-container {
+		height: 100%;
+		width: 30%;
+		row-gap: 10px;
+	}
+
+	.main-page-footer-container .reference-container a {
+		width: 30%;
+	}
+}
+
+@media (max-width: 768px) {
+	.main-page-enter-exit-container a {
+		height: 15%;
+		font-size: 1em;
+	}
+
+	.reference-container a {
+		height: 30%;
+		width: 70%;
+		font-size: 100%;
+	}
+
+	.menu-toggler-mr {
+		display: block;
+		position: absolute;
+		font-size: 35px;
+		z-index: 20;
+		top: 3%;
+		left: 90%;
+	}
+
+	.main-menu-container {
+		display: none;
+	}
+
+	.logo-search-user-container {
+		height: 50%;
+		width: 100%;
+		justify-content: space-between;
+		gap: 20px;
+	}
+
+	.logo-search-user-container .logo-continaer {
+		width: 20%;
+		border-radius: 0;
+	}
+
+	.search-bar-container {
+		width: 50%;
+	}
+
+	.search-bar-container i {
+		left: 70%;
+	}
+
+	.header-bar-container input {
+		padding: 8px;
+		width: 40vw;
+		margin-left: -40px;
+	}
+
+	.mic-sign-in-handler {
+		width: 20%;
+		justify-content: center;
+		width: fit-content;
+	}
+
+	.mic-sign-in-handler .mic-container {
+		display: none;
+	}
+
+	.sign-in-container {
+		width: 100%;
+		width: 10%;
+		position: absolute;
+		top: 6%;
+		left: 70%;
+	}
+
+	#sign-button-like {
+		width: 100%;
+		border: 2px ridge var(--logo-color-dark);
+	}
+
+	.video-container .video-btn-container a {
+		font-size: 0.875rem;
+		font-weight: 600;
+	}
+
+	.artist-page-containers {
+		flex-direction: column;
+		place-content: center;
+	}
+
+	.full-site-modal .main-menu-container {
+		display: block;
+		width: 50%;
+		position: absolute;
+		left: 40%;
+	}
+
+	.artist-page-top-container {
+		flex-direction: row;
+		height: auto;
+		gap: 15px;
+		margin-bottom: 60px;
+	}
+	.artist-page-bottom-container {
+		flex-direction: row;
+		height: auto;
+		gap: 50px;
+	}
+
+	.artist-page-video-container {
+		width: 100%;
+		height: fit-content;
+	}
+	.artist-page-video-container iframe {
+		width: 95%;
+		height: 500px;
+	}
+
+	.sub-video-container {
+		width: 100%;
+		justify-content: cener;
+		height: fit-content;
+	}
+
+	.artist-page-video-description-container,
+	.comments-container {
+		width: 100%;
+		height: fit-content;
+	}
+
+	.artist-page-artist-name {
+		padding-left: 8px;
+	}
+
+	.comments-container {
+		gap: 20px;
+		align-items: center;
+	}
+
+	.comments-container > div {
+		width: 85%;
+	}
+
+	.modal .main-menu-container {
+		margin-top: 10px;
+	}
+
+	.modal .menu-toggler-container {
+		height: fit-content;
+		position: relative;
+		margin-top: 0;
+	}
+
+	.modal #menu-toggler {
+		position: absolute;
+		font-size: 35px;
+		right: -5px;
+		top: 24px;
+	}
+
+	.modal .menu-toggler-container .logo-continaer {
+		display: none;
+	}
+
+	.modal .main-menu-list-wrapper {
+		justify-content: center;
+		width: 80%;
+		margin-left: 4px;
+	}
+}
+
+@media (max-width: 481px) {
+	.menu-toggler-mr {
+		top: 4%;
+		left: 86%;
+	}
+
+	.modal .main-menu-container {
+		margin-top: 15px;
+	}
+	.modal .main-menu-container li {
+		margin-top: 18px;
+	}
+
+	.modal #menu-toggler {
+		left: 81%;
+	}
+
+	.logo-continaer {
+		width: auto;
+	}
+
+	.logo-continaer img {
+		width: 160px;
+	}
+
+	.header-bar-container > * {
+		justify-content: space-between;
+	}
+
+	.search-bar-container {
+		display: none;
+	}
+
+	.sign-in-container {
+		width: auto;
+		right: 28%;
+	}
+
+	#sign-button-like {
+		width: 100px;
+		left: 10%;
+	}
+
+	.link-bar-container {
+		justify-content: center;
+	}
+
+	marquee {
+		font-size: 12px;
+	}
+
+	.sub-video-container .video-container {
+		width: 80%;
+	}
+
+	.main-page-header-container {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.main-page-image-container {
+		width: 100%;
+		height: 60%;
+	}
+
+	.main-page-enter-exit-container {
+		width: 100%;
+	}
+	.main-page-enter-exit-container a {
+		height: 40%;
+		width: 33%;
+	}
+
+	.main-page-card-contianer {
+		flex-direction: column;
+		align-content: center;
+		width: 100%;
+		row-gap: 20px;
+		height: auto;
+	}
+
+	.collection-card {
+		width: 70%;
+	}
+
+	.main-page-footer-container {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.video-container {
+		width: 350px;
+		height: 350px;
+	}
+
+	.video-btn-container a {
+		width: 40%;
+		justify-content: center;
+		font-size: 1.5em;
+	}
+
+	.video-btn-container a i {
+		font-size: 1.3em;
+	}
+
+	.reference-container {
+		display: none;
+	}
+
+	.responsive-reference-container {
+		padding: 15px 0;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		row-gap: 50px;
+	}
+
+	.responsive-reference-container a {
+		display: flex;
+		flex-direction: row;
+		border: 5px solid var(--true-black);
+		border-radius: 12px;
+		background-color: var(--logo-color-dark);
+		color: var(--true-black);
+		gap: 5px;
+		width: 40%;
+		height: 40px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.upload-header-container div {
+		justify-content: space-around;
+		font-size: 1em;
+		width: 25%;
+	}
+
+	.upload-header-container p {
+		font-size: 1.2em;
+	}
+
+	.upload-footer-container {
+		height: fit-content;
+	}
+
+	.upload-footer-icon-container i {
+		font-size: 1.2em;
+	}
+
+	.upload-footer-btn-contianer {
+		width: 40%;
+	}
+
+	.modal .main-menu-container {
+		margin-top: 15px;
+	}
+}
