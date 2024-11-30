@@ -1,0 +1,133 @@
+.google-ilogo, .googlea-ilogo, .calendar-ilogo {
+  animation-duration: 2s;
+  animation-name: googlecons;
+}
+
+@keyframes googlecons{
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(3);
+  }
+
+  
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: scale(7);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: scale(1.5);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: scale(1.24);
+	}
+
+	89% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: scale(1.04);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+
+.google-ilogo {
+
+  animation: googlecons 2s ease-in-out 0s 1 normal forwards;
+}
+
+
+.asan-ilogo, .assian-ilogo, .paypal-ilogo{
+   animation-duration: 2s;
+  animation-name: floatingicons;
+
+}
+
+@keyframes floatingicons {
+	0% {
+		transform: scale(2);
+	}
+
+	100% {
+		transform: scale(1);
+
+  }
+
+  	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	20% {
+		animation-timing-function: ease-in;
+		transform: scale(1);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(2);
+	}
+
+	50% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	10% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+
+.weave-ilogo{
+animation: floatingweave 2s cubic-bezier(0.5, 0, 0.75, 0) 0s 1 alternate forwards;
+}
+@keyframes floatingweave {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(1);
+	}
+
+  50% {
+    animation-timing-function: ease out;
+    transform: scale(3);
+  }
+
+  100% {
+    animation-timing-function: ease-in-out ;
+    transform: scale(1);
+  }
+}

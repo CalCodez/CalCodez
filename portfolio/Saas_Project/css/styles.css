@@ -1,0 +1,1114 @@
+#menu-toggler {
+	display: none;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-self: center;
+	justify-items: space-around;
+	align-items: center;
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	width: max-content;
+	background-color: var(--white);
+	height: auto;
+	gap: 320px;
+}
+
+.nav-links ul {
+	display: flex;
+	flex-direction: row;
+}
+
+nav a {
+	padding: 0px 0.938rem;
+	font-weight: 400;
+}
+
+.nav-links {
+	display: flex;
+	flex-direction: row;
+	font-size: 1.25rem;
+	position: relative;
+}
+
+.buyNow-span {
+	border-radius: 3.125rem;
+	background-color: var(--button-main-color);
+	color: #fff;
+}
+
+.nav-links .a6:hover {
+	transform: scale(1.2);
+}
+
+.front-logo {
+	display: flex;
+	position: relative;
+	padding: 0;
+	height: 20px;
+	align-self: flex-start;
+	justify-content: flex-start;
+}
+
+.logo-img {
+	max-width: 100%;
+	height: 5rem;
+	overflow: hidden;
+	align-self: flex-start;
+	position: relative;
+	z-index: 50;
+	margin: 0;
+}
+
+.linear-background {
+	height: 600px;
+	max-width: 100%;
+	background-image: linear-gradient(
+			173deg,
+			transparent 0%,
+			transparent 70%,
+			white 70% 67%,
+			white
+		),
+		linear-gradient(
+			118deg,
+			transparent 0%,
+			transparent 68%,
+			#f1f3f7 68%,
+			#f1f3f7 100%
+		),
+		linear-gradient(to top left, #edeff3, transparent 60%);
+}
+
+/* **Empower Section** */
+.empower-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-top: 5rem;
+	position: relative;
+	flex-shrink: inherit;
+}
+
+.empower-side1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	height: 25.375rem;
+	width: 31.25rem;
+	position: static;
+}
+
+.empower-side1 h2 {
+	color: #000;
+	font-family: Inter;
+	font-size: 2.5rem;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	flex-shrink: inherit;
+}
+
+.video-btn {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+	flex-shrink: inherit;
+}
+
+.floating-icons {
+	display: flex;
+	position: relative;
+	height: 25.375rem;
+	width: 37.5rem;
+}
+
+.logo-bg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+	flex-shrink: 0;
+	position: absolute;
+	border-radius: 100%;
+	padding: 0.1875rem;
+	background-color: var(--contrast);
+	box-shadow: 2px 5px 6px 3px var(--box-shadow);
+}
+
+.small-logContainer {
+	display: flex;
+	width: max-content;
+	height: max-content;
+	align-items: flex-start;
+	flex-shrink: 0;
+	position: absolute;
+	flex-wrap: wrap;
+}
+
+.floating-icons img {
+	display: flex;
+	width: 80px;
+	height: 80px;
+	flex-shrink: inherit;
+	position: relative;
+	overflow: hidden;
+	border-radius: 100%;
+}
+
+.small-ilogo {
+	width: 2.5rem;
+	height: 2.5rem;
+	flex-shrink: inherit;
+	border-radius: 100%;
+	position: relative;
+	background-color: transparent;
+}
+
+/* !!Positioning ilogo!! */
+.google-ilogo {
+	position: absolute;
+	left: 12%;
+	top: 5%;
+}
+
+.assian-ilogo {
+	position: absolute;
+	top: 9%;
+	left: 35%;
+	background-color: transparent;
+}
+
+.asan-ilogo {
+	position: absolute;
+	left: 70%;
+	top: 9%;
+}
+
+.paypal-ilogo {
+	position: absolute;
+	bottom: 35%;
+	left: 10%;
+}
+
+.weave-ilogo {
+	position: absolute;
+	bottom: 36%;
+	left: 47%;
+}
+
+.googlea-ilogo {
+	position: absolute;
+	top: 78%;
+	left: 25%;
+}
+
+.calendar-ilogo {
+	position: absolute;
+	left: 78%;
+	top: 85%;
+}
+
+/* **Key Ben Section */
+.key-ben {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	text-align: center;
+	margin-bottom: 5rem;
+	width: 100%;
+}
+
+.key-why-price h2 {
+	color: var(--font-color-dark);
+	font-size: 1.875rem;
+	text-align: center;
+}
+
+.key-why-price p {
+	text-align: center;
+}
+
+.card-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	width: 100%;
+	flex-shrink: 1;
+}
+
+.key-cards {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-shrink: inherit;
+	gap: 10px;
+	border: 1px solid #ffffff;
+	box-shadow: 0 0.3125rem 10px 2px var(--box-shadow);
+	padding: 1.125rem;
+	height: 300px;
+	width: 185px;
+}
+
+.key-cards:hover {
+	border: 1px ridge #2476ff;
+	color: #777;
+	box-shadow: 0 0.3125rem 0.3125rem 0rem rgba(92, 116, 235, 0.655);
+	background-color: #2474ff07;
+}
+
+.card-icon > h3 {
+	color: var(--font-color-dark);
+	font-weight: 700;
+}
+
+.h3-btn {
+	display: flex;
+	color: #000;
+	gap: 0.625rem;
+	align-items: center;
+}
+
+.card-icon {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	width: 3.75rem;
+	height: 3.75rem;
+	margin-bottom: 35px;
+}
+
+.card-bottom {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+/***Section 3 Banner One Section** */
+.banner-one {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	flex-shrink: inherit;
+	margin-bottom: 3.75rem;
+	height: 28.125rem;
+	gap: 100px;
+}
+
+.banner-text-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: inherit;
+	align-items: flex-start;
+	align-content: center;
+	gap: 1.625rem;
+	width: 40%;
+	padding: 0.625rem;
+}
+
+.banner-text-wrapper p {
+	color: var(--black);
+	font-size: 1.375rem;
+	font-weight: 500;
+	width: 70%;
+}
+
+.banner-1 img {
+	height: 21.875rem;
+}
+
+/* **Section 4 Why Front */
+
+.why-front {
+	display: flex;
+	padding-bottom: 0px;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.625rem;
+	align-self: stretch;
+	width: 100%;
+	margin-bottom: 5rem;
+}
+
+.bullet-row {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: baseline;
+	justify-content: center;
+	width: 64rem;
+	padding: 40px 20px 80px 20px;
+	flex-wrap: wrap;
+}
+
+.why-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	flex: 1 0 0;
+}
+
+.wing {
+	height: 1px;
+	flex: 1 0 0;
+	background-color: #e6e9f2;
+	width: auto;
+}
+
+.why-top {
+	display: flex;
+	align-items: center;
+	gap: 1px;
+	justify-content: center;
+}
+
+.dot-container {
+	display: flex;
+	width: 3.125rem;
+	height: 3.125rem;
+	padding: 0.625rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.625rem;
+	border-radius: 2.5rem;
+	background: #ecf2ff;
+	flex-wrap: wrap;
+}
+
+.dot {
+	width: 0.375rem;
+	height: 0.375rem;
+	flex-shrink: 0;
+	border-radius: 0.1875rem;
+	background: #06f;
+}
+
+.why-box > p {
+	font-weight: 700;
+	text-overflow: inherit;
+	font-size: 1rem;
+}
+
+.why-bottom {
+	display: flex;
+	padding: 1.625rem 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+	flex: 1 0 0;
+}
+
+.banner2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	position: relative;
+	margin-top: 60px;
+	height: fit-content;
+}
+
+.banner2 > img {
+	width: 90%;
+	height: 31.25rem;
+	position: relative;
+	flex-shrink: 0;
+}
+
+.play-btn {
+	display: flex;
+	place-items: center;
+	width: 3.125rem;
+	height: 3.125rem;
+	padding: 1.25rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.625rem;
+	flex-shrink: 0;
+	border-radius: 100%;
+	background: #fff;
+	box-shadow: 0 0.625rem 0 rgba(0, 0, 0, 0.25);
+
+	position: absolute;
+}
+
+.play-btn button {
+	display: flex;
+	place-self: center;
+	background-color: transparent;
+	border-style: none;
+	flex: 1;
+}
+
+.play-btn .fa-solid {
+	display: flex;
+	place-self: center;
+	color: black;
+	font-size: 1.25rem;
+	flex: 1;
+}
+
+/* **Section 5 Hubspot** */
+
+.hubspot-section {
+	display: flex;
+	flex-direction: row;
+	place-content: center;
+	width: 100%;
+	height: 640px;
+	align-items: center;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+.dot-graph-wrapper {
+	display: flex;
+	position: relative;
+	width: 12.5rem;
+	height: 21.875rem;
+	left: 4%;
+}
+
+.dot-graph > img {
+	position: absolute;
+	display: flex;
+	width: 12.5rem;
+	height: 21.875rem;
+	flex-shrink: 0;
+}
+
+.hub-woman-wrapper {
+	display: flex;
+	position: relative;
+	right: 8%;
+	bottom: 12%;
+	width: 22.5rem;
+	height: 26.25rem;
+}
+
+.hub-woman img {
+	position: absolute;
+	display: flex;
+	width: 22.5rem;
+	height: 420px;
+	flex-shrink: 0;
+}
+
+.hubspot-text {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+
+	flex-wrap: wrap;
+	gap: 1.875rem;
+	width: 45%;
+	bottom: 10%;
+	right: 3%;
+}
+
+.hubspot-logo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.625rem;
+	flex: 1 0 0;
+	width: 100%;
+}
+
+.hubspot-logo img {
+	display: flex;
+	height: 33.184px;
+	flex: 1 0 0;
+	width: fit-content;
+	float: left;
+}
+
+.hubspot-logo > p {
+	color: #000;
+	font-family: Inter;
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: 2rem;
+	width: 100%;
+}
+
+.ex-direct {
+	display: flex;
+	flex-direction: column;
+	margin-left: 0;
+}
+
+.ex-direct h5 {
+	color: var(--black);
+	font-family: Inter;
+	font-size: 18px;
+	font-weight: 700;
+	justify-self: flex-start;
+	gap: 0;
+	margin-bottom: 0;
+}
+
+.ex-direct p {
+	color: var(--font-color-base);
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	width: 100%;
+}
+
+/* **Trusted Section */
+.trusted-section {
+	width: 100%;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.trusted-header {
+	color: #667788;
+	font-size: 1.5625rem;
+	text-align: center;
+}
+
+.trusted-logos {
+	display: flex;
+	height: 3.6875rem;
+	padding: 0px 1px;
+	align-items: center;
+	gap: 1.25rem;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.trusted-logos img {
+	width: 6.25rem;
+	height: 3.125rem;
+	flex-shrink: inherit;
+}
+
+/* **Pricing Section */
+.pricing-section {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.pricing-cardRow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	gap: 3.75rem;
+	flex-wrap: wrap;
+	margin-bottom: 4.375rem;
+}
+
+.bigPrice-card {
+	display: flex;
+	width: 26.875rem;
+	padding: 0.9375rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 3.125rem;
+	box-shadow: 0 0.625rem 1.25rem 0 rgba(0, 0, 0, 0.15);
+}
+
+.bigPrice-card-top {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	justify-content: baseline;
+	align-self: stretch;
+	margin: 1.25rem 0rem -1.25rem 0;
+	height: 5rem;
+}
+
+.fifty-nine {
+	display: flex;
+	font-size: 2.8125rem;
+	color: var(--font-color-dark);
+	font-weight: 700;
+	margin-bottom: -0.625rem;
+	align-self: last baseline;
+	position: relative;
+}
+
+.price-permo {
+	display: flex;
+	font-size: 1.25rem;
+	position: relative;
+	align-self: last baseline;
+}
+
+.pricing-cardRow hr {
+	color: #666;
+	height: 1px;
+	/*width: 100%;*/
+	width: 23.75rem;
+}
+
+.bigPrice-card-bottom {
+	width: 100%;
+}
+
+.cardWrapper-bottom p {
+	color: var(--font-color-base);
+	font-family: Inter;
+	font-size: 0.75rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+	width: 100%;
+}
+
+.price-btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.price-btn {
+	gap: 0;
+}
+
+.fourCard-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.fourCard-top,
+.fourCard-bottom {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 25px;
+	flex-wrap: wrap;
+}
+
+.cancel-header {
+	display: flex;
+	padding: 0.25rem 0.625rem;
+	align-items: baseline;
+	justify-items: center;
+	gap: 5px;
+}
+
+.priceCard-img {
+	width: 3.125rem;
+	height: 3.125rem;
+}
+
+/* **HireUS Section */
+
+.hireus-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #20335b;
+	color: var(--white);
+	width: 100%;
+	padding: 0.625rem 0;
+}
+
+.hireus-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 11.25rem;
+	flex-wrap: wrap;
+	flex-shrink: inherit;
+	padding: 2.5rem;
+	width: inherit;
+}
+
+.hireUs-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex: 1;
+	font-stretch: ultra-expanded;
+	margin-top: 6.25rem;
+	width: 50%;
+	gap: 0.625rem;
+	padding: 2.5rem;
+}
+
+.hireUs-text h3 {
+	font-weight: 600;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.hireUs-text p {
+	color: var(--font-color-light);
+}
+
+.hireUs-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 3.125rem;
+}
+
+.char-moore {
+	display: flex;
+	padding-right: 0px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 1.875rem;
+	flex: 1;
+	width: 100%;
+}
+
+.hireUs-images {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	width: 100%;
+	gap: 1.875rem;
+}
+
+.hireUs-images img {
+	border-radius: 100%;
+	width: 2.5rem;
+	height: 2.5rem;
+	gap: 1.875rem;
+}
+
+#man1 {
+	width: 3.75rem;
+	height: 3.75rem;
+}
+
+header {
+	color: #000;
+	font-size: 1rem;
+	padding-bottom: 1.25rem;
+	font-weight: 900;
+	line-height: 1.25rem;
+}
+
+.form-div {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-star;
+	align-items: center;
+	background-color: var(--white);
+	padding: 1.875rem;
+	border-radius: 0.5rem;
+	flex-shrink: inherit;
+}
+
+.form-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-star;
+	align-items: center;
+	background-color: var(--white);
+	padding: 1.875rem;
+	border-radius: 0.5rem;
+	flex-shrink: inherit;
+	width: 100%;
+}
+
+.name-inputs {
+	width: 100%;
+}
+
+.input-wrapper {
+	width: 100%;
+}
+
+.form-div header {
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+}
+
+.input-wrapper {
+	display: flex;
+	gap: 30px;
+	flex-shrink: inherit;
+}
+
+.name-inputs {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	gap: 1.25rem;
+}
+
+.name-inputs input,
+select,
+.input-wrapper select #Budget {
+	display: flex;
+	padding: 0.3125rem;
+	align-items: flex-start;
+	gap: 0.625rem;
+	flex: 1 0 0;
+	margin-bottom: 0.9375rem;
+}
+
+textarea {
+	display: flex;
+	width: 24.5rem;
+	height: 9.375rem;
+	padding: 0.625rem;
+	align-items: flex-start;
+	gap: 0.625rem;
+	border-radius: 0.3125rem;
+	border: 1px solid #e6e8f2;
+}
+
+.finalForm-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-items: flex-start;
+	align-items: center;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+}
+
+.radio-wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-content: center;
+}
+
+.radio-btn {
+	padding-top: 0.625rem;
+}
+
+.radio {
+	width: 1.563rem;
+	height: 1.5rem;
+	border-radius: 0.1875rem;
+	border: 0.0625rem solid #e6e8f2;
+}
+
+.subscribe-wrapper {
+	display: flex;
+	bottom: -3.125rem;
+}
+
+.policy-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 3.125rem;
+	width: 100%;
+	place-content: center;
+	flex-wrap: wrap;
+}
+
+.policy-link1 {
+	color: var(--font-color-base);
+}
+
+.policy-wrapper .policy-links {
+	text-decoration: underline dotted var(--font-color-base);
+	text-decoration-thickness: 2px;
+}
+
+.form-btn {
+	display: flex;
+	padding: 1.875rem;
+	flex-direction: column;
+	align-items: center;
+	gap: 37px;
+	align-self: stretch;
+}
+
+.form-button {
+	display: flex;
+	padding: 0.938rem 1.563rem;
+	align-items: center;
+	justify-self: center;
+	gap: 0.5rem;
+	border-radius: 1.875rem;
+	background: #2476ff;
+	color: #fff;
+}
+
+/* **Footer Section** */
+/* ``Foooter Card 1`` */
+.footer-wrapper > footer {
+	display: flex;
+	flex-direction: column;
+	padding: 5rem 1.875rem 2.5rem 1.875rem;
+	flex-wrap: wrap;
+}
+
+.footer-section {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 2.5rem;
+	padding-bottom: 3.125rem;
+	height: 10.375rem;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.ft-section2 {
+	justify-content: space-around;
+	padding: 2.5rem 6.25rem;
+	column-gap: 0.625rem;
+	height: 3.125rem;
+	flex-wrap: wrap;
+}
+
+.ftfour-cardWrap {
+	display: flex;
+	gap: 6.25rem;
+	flex-wrap: wrap;
+}
+
+.ft-section3 {
+	flex-direction: column;
+	row-gap: 0.625rem;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.footer-card {
+	display: flex;
+	flex-direction: column;
+	font-weight: 800;
+	align-content: flex-start;
+	padding: 0;
+	height: fit-content;
+	width: 150px;
+}
+
+.footer-card a {
+	font-size: 0.9375rem;
+}
+
+.footer-logo {
+	width: 6.25rem;
+	height: 29.761px;
+}
+
+.footerCard-h > h3 {
+	font-size: 0.875rem;
+	display: flex;
+	border: 0.125rem sold blue;
+}
+
+.foot-addy {
+	display: flex;
+	flex-direction: column;
+}
+
+.address-help,
+.phone-account {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.625rem;
+}
+
+.foot-phone p {
+	color: #2576ff;
+	align-content: center;
+}
+
+.footer-optionCards {
+	display: flex;
+	flex-direction: row;
+}
+
+/* ``Footer Card`` 2 */
+.career {
+	display: flex;
+	align-items: center;
+	gap: 0.5625rem;
+	flex-wrap: wrap;
+}
+
+.hiring-btn input {
+	display: flex;
+	align-items: center;
+	gap: 0.5625rem;
+	color: #ffffff;
+	background-color: #2576ff;
+	flex-wrap: wrap;
+}
+
+.social-icons,
+.footer-select {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.625rem;
+	flex-wrap: wrap;
+}
+
+.social-icons i {
+	display: flex;
+	width: 0.875rem;
+	height: 0.875rem;
+	padding: 0.25rem;
+	font-size: 0.875rem;
+	justify-content: center;
+	background-color: #ecf2ff;
+	flex-wrap: wrap;
+}
+
+.social-icons .google i {
+	background-color: #677788;
+	flex-wrap: wrap;
+}
+
+.social-icons input {
+	display: flex;
+	height: 1.875rem;
+	padding: 0 0.8125rem;
+	justify-content: center;
+	align-items: center;
+	gap: 1.25rem;
+	border-left: none;
+	flex-wrap: wrap;
+}
+
+.disclose {
+	text-align: center;
+	flex-wrap: wrap;
+}

@@ -1,0 +1,137 @@
+:root {
+	--white: #fff;
+	--black: #000;
+	--font-color-base: #667788;
+	--font-color-dark: #212529;
+	--font-color-light: #b0aebe;
+	--link-learn-more: #3f87ff;
+	--link-feature-color: #2476ff;
+	--contrast: rgba(246, 248, 249, 0.8);
+	--box-shadow: #4f545a82;
+	--button-main-color: #2476ff;
+	--button-sketch-color: #01c9a7;
+
+	--size-10: 0.625rem;
+	--size-14: 0.875rem;
+	--size-16: 1rem;
+	--size-18: 1.125rem;
+	--size-20: 1.25rem;
+	--size-30: 1.875rem;
+	--size-40: 2.5rem;
+	--size-50: 3.125rem;
+	--size-100: 6.25rem;
+	--size-150: 9.375rem;
+
+	/* ATTENTION Media screen ps Defaults ATTENTION */
+
+	/* NOTE DesktopNOTE */
+	--size-1024: 64rem;
+
+	/* NIM Mobile min/max XAM */
+	--size-360: 22.5rem;
+	--size-767: 47.938rem;
+
+	/* NIM Tablet min/maxXAM */
+	--size-768: 4.875rem;
+	--size-1023: 63.938rem;
+
+	/* NIM Other Screen SizesXAM */
+	--size-800: 50rem;
+	--size-414: 25.875rem;
+	--size-412: 25.75rem;
+	--size-375: 23.438rem;
+	--size-75: 4.688rem;
+}
+
+html {
+	scroll-behavior: smooth;
+	display: flex;
+	padding-left: 0;
+	justify-content: center;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: max-content;
+	place-content: center;
+	flex-shrink: inherit;
+	font-family: "Preahvihear", sans-serif;
+	font-weight: 200;
+	font-size: 0.875em;
+	line-height: 1.6;
+	padding: 1rem;
+}
+
+img {
+	max-width: 100%;
+	border-style: none;
+}
+
+.btn {
+	display: flex;
+	padding: 0.3125rem 0.625rem;
+	align-items: center;
+	gap: 0.5rem;
+	border-radius: var(--size-30);
+	background: var(--button-main-color);
+	color: #ffffff;
+	box-shadow: 0.1875rem 0.1875rem 0.3125rem 0.125rem rgba(36, 116, 255, 0.299);
+	border-color: #2476ff;
+	cursor: pointer;
+}
+
+.sketch-btn {
+	display: flex;
+	padding: 0.25rem 0.9375rem;
+	align-items: flex-start;
+	align-self: center;
+	gap: 0.5rem 0.125rem;
+	border-radius: 0.938rem;
+	background: var(--button-sketch-color);
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.sketch-btn-2 {
+	display: flex;
+	padding: 2px 8px;
+	align-items: flex-start;
+	align-self: center;
+	border-radius: 0.938rem;
+	background: var(--button-sketch-color);
+	color: var(--white);
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+}
+
+p {
+	color: var(--font-color-base);
+	font-size: 1em;
+}
+
+nav a,
+footer a,
+footer p {
+	color: var(--font-color-base);
+	font-size: 0.875em;
+}
+
+.learn-more {
+	color: var(--link-learn-more);
+	font-size: 1em;
+}
+
+.featured-link {
+	color: var(--link-feature-color);
+}
