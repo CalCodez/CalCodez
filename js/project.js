@@ -260,7 +260,7 @@ const projects = {
               inclusion. This project helped me learn HTML tables displayed on the homepage. User-interactive: click the
               topics to
               jump to the pages.`,
-		href: '#',
+		href: '/portfolio/Project-My_Favz/index.html',
 	},
 	tribute: {
 		title: 'Tribute',
