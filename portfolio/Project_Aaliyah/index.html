@@ -1,0 +1,75 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/ballet" rel="stylesheet">
+    <link rel="stylesheet" href="./css/defaults.css">
+    <link rel="stylesheet" href="./css/pages.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <i id="menu-toggler" class="fa-solid fa-bars"></i>
+    <div id="mobile-menu" class="content">
+      <a class="content a-btn" href="./html/bio.html"><i class="fa-solid fa-user"></i>Bio</a>
+      <a class="content a-btn" href="./html/music.html"><i class="fa-solid fa-music"></i>Music</a>
+      <a class="content a-btn" href="./html/movies.html"><i class="fa-solid fa-film"></i>Movies</a>
+      <a class="content a-btn" href="/project.html#projectDisplayContainer"><i
+          class="fa-solid fa-person-running"></i>Exit</a>
+    </div>
+
+
+
+    <div class="container main-wrapper">
+      <div class="content header-container ">
+        <h1> ~ Aaliyah ~</h1>
+      </div>
+      <div class="container main-image-container">
+        <img src="https://w0.peakpx.com/wallpaper/612/941/HD-wallpaper-aaliyah-s-boat-abstract-singer-aaliyah-blue.jpg"
+          alt="Aaliyah">
+      </div>
+      <div class="container life-span-container">
+        <div class="content">
+          <i class="fa-solid fa-sun"></i> Sunrise: January 16, 1979
+        </div>
+
+
+        <div class="content">
+          <i class="fa-solid fa-moon"></i> Sunset: August 25, 2001
+        </div>
+      </div>
+
+      <div class="container main-nav-container">
+        <a class="content a-btn" href="./html/bio.html"><i class="fa-solid fa-user"></i>Bio</a>
+        <a class="content a-btn" href="./html/music.html"><i class="fa-solid fa-music"></i>Music</a>
+        <a class="content a-btn" href="./html/movies.html"><i class="fa-solid fa-film"></i>Movies</a>
+        <a class="content a-btn" href="/project.html#projectDisplayContainer"><i
+            class="fa-solid fa-person-running"></i>Exit</a>
+
+      </div>
+
+    </div>
+
+
+    <script>
+      function mobileMenu() {
+        if (
+          document.getElementById("mobile-menu").style.display == "flex"
+        ) {
+          document.getElementById("mobile-menu").style.display = "none";
+        } else {
+          document.getElementById("mobile-menu").style.display = "flex";
+        }
+      }
+      document
+        .getElementById("menu-toggler")
+        .addEventListener("click", mobileMenu);
+    </script>
+  </body>
+
+</html>

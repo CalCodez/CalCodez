@@ -271,7 +271,7 @@ const projects = {
               music and videos, and a page highlighting the movies she starred in. Each section pays homage to her
               impactful career
               and lasting legacy in entertainment.`,
-		href: '#',
+		href: '/portfolio/Project_Aaliyah/index.html',
 	},
 	google: {
 		title: 'Google',
