@@ -1,0 +1,435 @@
+/* ?? Facebook Styles */
+.body-facebook {
+	background-color: var(--fb-bg-white);
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+.body-facebook .main-header {
+	background: radial-gradient(var(--fb-bg-white), var(--fb-button-blue));
+	justify-content: space-around;
+	padding: 10px 0;
+}
+
+.body-facebook .links-container,
+.body-instagram .links-container,
+.body-threads .links-container {
+	margin-right: 80px;
+	width: 80%;
+}
+
+.body-facebook .profile-pic-container {
+	box-shadow: none;
+}
+
+.body-facebook p {
+	color: var(--fb-logo-blue);
+	font-size: 2.5rem;
+	font-weight: 700;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body-facebook .fb-login-container {
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	align-self: center;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 10px;
+}
+
+.fb-login-form {
+	width: 310px;
+	height: 310px;
+	border-radius: 8px;
+	border: 0.8px solid lightgray;
+	box-shadow: 2px 2px 5px 1px lightgrey;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 15px;
+	background-color: var(--white);
+}
+
+.fb-login-form p {
+	color: #000;
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fb-login-form input {
+	width: 100%;
+	height: 45px;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: 0.1px solid var(--ig-input-border);
+}
+
+.fb-login-form input::placeholder {
+	color: var(--fb-placeholder-gray);
+	font-size: 1.1em;
+	font-weight: 520;
+	padding-left: 15px;
+}
+
+.fb-login-form .fb-login-btn {
+	width: 100%;
+	height: 45px;
+	background-color: var(--fb-logo-blue);
+	color: var(--white);
+	justify-content: center;
+	align-items: center;
+	font-size: 1.1rem;
+	font-weight: 550;
+	border-radius: 5px;
+	border: none;
+	margin: 10px 0 15px 0;
+}
+
+.fb-login-form .fb-forgot-text {
+	color: var(--fb-font-blue);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 0.8rem;
+	font-weight: 400;
+}
+
+.fb-hr {
+	margin: 15px 0 5px 0;
+}
+
+.hr-text {
+	line-height: 1.5em;
+	position: relative;
+	outline: 0;
+	border: 0;
+	color: black;
+	text-align: center;
+	height: 1.5em;
+	opacity: 1;
+	&:before {
+		content: '';
+		background: linear-gradient(to right, transparent, #818078, transparent);
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 100%;
+		height: 1px;
+	}
+	&:after {
+		content: attr(data-content);
+		position: relative;
+		display: inline-block;
+		color: black;
+
+		padding: 0 0.5em;
+		line-height: 1.5em;
+		color: #818078;
+		background-color: var(--white);
+	}
+}
+
+[data-content] {
+	font-size: 0.8em;
+}
+
+.fb-login-form .fb-create-new-btn {
+	margin-top: 10px;
+	justify-content: center;
+	align-items: center;
+	width: 55%;
+	height: 45px;
+	border-radius: 5px;
+	border: none;
+	background-color: var(--fb-newAccount-button);
+	color: var(--white);
+	margin-left: 20%;
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+/* ?? Instagram Styles */
+
+.body-instagram {
+	background-color: var(--white);
+	padding: 0;
+}
+
+.body-instagram .main-header {
+	background: radial-gradient(
+		var(--ig-bg-light-yellow),
+		var(--ig-bg-orange),
+		var(--ig-bg-dark-pink),
+		var(--ig-bg-blue)
+	);
+	margin-bottom: 10px;
+	padding: 10px 0;
+}
+
+.body-instagram .main-header .profile-pic-container {
+	box-shadow: none;
+}
+
+.body-instagram .main-header .fa-person-running {
+	color: var(--ig-bg-purple);
+}
+
+.body-instagram .ig-form-container {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: fit-content;
+	flex-direction: column;
+}
+
+.ig-form-container .ig-form {
+	width: 450px;
+	height: 550px;
+	flex-direction: column;
+	margin: 10px 0;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 40px 40px 10px 40px;
+	border: 0.5px solid lightgray;
+}
+
+.ig-form p {
+	font-size: 60px;
+	font-family: 'Balibong', sans-serif;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+
+.ig-form input {
+	width: 85%;
+	height: 50px;
+	border-radius: 5px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	border: 0.5px solid var(--ig-input-border);
+	background-color: var(--ig-placeholder-bg);
+}
+
+.ig-form input::placeholder {
+	color: var(--ig-placeholder-text);
+}
+
+.ig-form .ig-login-btn {
+	width: 85%;
+	place-content: center;
+	align-items: center;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	background-color: var(--ig-button-blue);
+	color: var(--white);
+	font-weight: 700;
+	font-size: 1rem;
+	margin-top: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ig-form .hr-container {
+	width: 95%;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0 40px 0;
+}
+
+.ig-fb-login-container {
+	justify-content: center;
+	align-content: center;
+	column-gap: 10px;
+	width: 100%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+	color: var(--ig-fb-login-blue);
+	margin-bottom: 15px;
+}
+
+.ig-fb-login-container .fa-facebook-square {
+	font-size: 1.5em;
+	color: var(--fb-button-blue);
+}
+
+.ig-fb-login-container p,
+.ig-forgot-text p {
+	font-size: 1em;
+
+	margin-top: 5px;
+}
+
+.ig-forgot-text {
+	justify-content: center;
+	align-items: center;
+	height: fit-content;
+	margin-top: 10px;
+	color: var(--ig-forgot-text);
+	font-size: 0.9em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body-instagram .ig-dont-have-account-container {
+	width: 450px;
+	height: 80px;
+	border: 0.5px solid lightgray;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1.1rem;
+	column-gap: 2px;
+}
+
+.body-instagram .ig-dont-have-account-container a {
+	color: var(--ig-signup-blue);
+	filter: drop-shadow(0.5px 0.5px var(--ig-signup-blue));
+}
+
+/* ?? Threads Styles */
+
+.body-threads {
+	padding: 0;
+	position: relative;
+	background-color: transparent;
+}
+
+.body-threads #mobile-menu {
+	display: none;
+}
+
+.body-threads .threads-bg-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -2;
+}
+
+.body-threads .main-header {
+	background: radial-gradient(
+		var(--threads-placeholder-text),
+		var(--threads-input-gray),
+		var(--threads-black)
+	);
+	padding: 10px 0;
+}
+
+.body-threads .main-header .profile-pic-container {
+	box-shadow: none;
+}
+
+.threads-form-container {
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	background: #000000da;
+}
+
+.threads-form-container .threads-form {
+	justify-content: flex-start;
+	align-items: center;
+	width: 450px;
+	height: 500px;
+	flex-direction: column;
+	color: var(--white);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.threads-form p {
+	margin-bottom: 15px;
+}
+
+.threads-form input {
+	width: 85%;
+	height: 55px;
+	background-color: var(--threads-input-gray);
+	border: 0;
+	border-radius: 8px;
+	margin-bottom: 8px;
+	padding-left: 10px;
+	font-size: 1rem;
+}
+
+.threads-form button {
+	justify-content: center;
+	align-items: center;
+	width: 85%;
+	height: 55px;
+	border-radius: 8px;
+	border: 0;
+	font-size: 1rem;
+	color: var(--threads-placeholder-text);
+	margin-bottom: 20px;
+}
+
+.threads-forgot-text a {
+	color: var(--threads-placeholder-text);
+	font-size: 0.8em;
+}
+
+.threads-form .hr-container {
+	margin: 40px 0;
+	width: 100%;
+}
+
+.threads-form .hr-container .hr-text {
+	line-height: 1.5em;
+	position: relative;
+	outline: 0;
+	border: 0;
+	color: black;
+	text-align: center;
+	height: 1.5em;
+	opacity: 1;
+	&:before {
+		content: '';
+		background: linear-gradient(to right, #818078, #818078, #818078);
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 100%;
+		height: 1px;
+	}
+	&:after {
+		content: attr(data-content);
+		position: relative;
+		display: inline-block;
+		color: black;
+
+		padding: 0 0.5em;
+		line-height: 1.5em;
+		color: #818078;
+		background-color: #000000da;
+	}
+}
+
+.login-with-instagram-container {
+	width: 85%;
+	justify-content: space-between;
+	color: var(--white);
+	border: 1px solid #818078;
+	align-items: center;
+	border-radius: 8px;
+	padding: 15px;
+}
+
+.login-with-instagram-container img {
+	height: 50px;
+	width: 50px;
+}
+
+.login-with-instagram-container i {
+	color: #818078;
+	font-size: 1.4rem;
+}
+
+.mobile-section {
+	display: none;
+}

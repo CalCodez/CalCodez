@@ -248,7 +248,7 @@ const projects = {
               desktop, tablet, and mobile. The displayed login page adapts based on the device used, showcasing
               responsive design
               skills across different screen sizes.`,
-		href: `#`,
+		href: `/portfolio/Project_social_pages/index.html`,
 	},
 
 	favz: {

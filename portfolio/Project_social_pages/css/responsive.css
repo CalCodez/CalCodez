@@ -1,0 +1,212 @@
+@media (max-width: 768px) {
+	.body-main .main-header {
+		flex-wrap: wrap;
+		row-gap: 20px;
+	}
+
+	.body-main h1 {
+		font-size: 30px;
+	}
+
+	.body-main .social-meadia-section {
+		row-gap: 50px;
+	}
+	.body-main .social-containers {
+		width: 300px;
+		height: 350px;
+	}
+
+	.body-facebook .profile-pic-container,
+	.body-instagram .profile-pic-container,
+	.body-threads .profile-pic-container {
+		display: none;
+	}
+}
+
+@media (max-width: 700px) {
+	.body-main footer,
+	.body-facebook .main-header,
+	.fb-login-container,
+	.body-facebook footer,
+	.body-instagram .main-header,
+	.ig-form-container,
+	.body-instagram footer,
+	.body-threads .threads-form-container,
+	.body-threads footer {
+		display: none;
+	}
+
+	html,
+	.body-facebook {
+		background-color: white;
+		height: fit-content;
+	}
+	.html-black {
+		background-color: #000;
+	}
+
+	.body-facebook {
+		padding-bottom: 30px;
+	}
+
+	.mobile-section {
+		width: 90vw;
+		height: auto;
+		height: 200px;
+		flex-direction: column;
+		padding: 20px;
+		display: flex;
+		position: relative;
+	}
+	.mobile-section .container {
+		justify-content: center;
+		align-items: center;
+	}
+
+	#menu-toggler {
+		font-size: 2rem;
+		color: #000;
+		display: flex;
+	}
+
+	#mobile-Menu {
+		flex-direction: column;
+		background-color: var(--white);
+		width: 250px;
+		height: 250px;
+		border: 2px solid lightgrey;
+		position: absolute;
+		font-size: 1.5rem;
+		row-gap: 30px;
+		top: 20px;
+		right: 20px;
+		display: none;
+	}
+
+	.mobile-logo-container {
+		width: 100%;
+		height: fit-content;
+		margin-bottom: 35px;
+	}
+
+	.mobile-logo-container img {
+		border-radius: 50%;
+	}
+
+	.mobile-logo-container .instagram-logo-mobile {
+		height: 60px;
+	}
+
+	.mobile-image-container {
+		width: 100%;
+		height: fit-content;
+		margin-bottom: 20px;
+	}
+
+	.mobile-image-container img {
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		border: 3px solid var(--white);
+		box-shadow: 2px 2px 20px 2px #0000007d;
+	}
+
+	.mobile-name-container {
+		width: 100%;
+		height: fit-content;
+		font-size: 1.8rem;
+		text-align: center;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-weight: 600;
+		margin-bottom: 50px;
+	}
+
+	.mobile-signin-btn-container {
+		width: 100%;
+		height: fit-content;
+		margin-bottom: 20px;
+	}
+
+	.mobile-signin-btn-container .sign-btn {
+		width: 100%;
+		height: 60px;
+		color: var(--white);
+		background-color: var(--fb-logo-blue);
+		border-radius: 20px;
+		border: none;
+		font-size: 1.2rem;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+
+	.mobile-login-another-account-container {
+		width: 100%;
+		height: 20px;
+		font-size: 1.2rem;
+		font-weight: 600;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		margin-bottom: 180px;
+	}
+	.mobile-login-another-account-container .ig-login-another-account-btn {
+		width: 100%;
+		height: 60px;
+		border-radius: 20px;
+		margin-top: 20px;
+		background-color: transparent;
+		border: 3px solid lightgrey;
+		font-weight: 600;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-size: 1.2rem;
+	}
+
+	.mobile-create-new-account-container {
+		margin-bottom: 20px;
+	}
+
+	.create-new-account-btn {
+		width: 100%;
+		height: 60px;
+		border: 3px solid var(--fb-logo-blue);
+
+		border-radius: 20px;
+		color: var(--fb-logo-blue);
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-size: 1.2rem;
+		background-color: transparent;
+		padding: 8px;
+	}
+
+	.body-threads .main-header {
+		display: none;
+	}
+
+	.body-threads #menu-toggler {
+		color: var(--project-red-dark);
+		display: flex;
+	}
+
+	.body-threads #mobile-menu {
+		background-color: #000;
+		border: none;
+		padding: 5px;
+	}
+
+	.body-threads .mobile-section {
+		height: 100%;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.body-threads .mobile-section .login-with-instagram-container {
+		justify-content: space-around;
+		height: 90px;
+		font-size: 1rem;
+		width: 300px;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+
+	.threads-mobile-switch-profile-container {
+		color: lightgrey;
+		margin-top: 30px;
+		font-size: 1.2rem;
+	}
+}
