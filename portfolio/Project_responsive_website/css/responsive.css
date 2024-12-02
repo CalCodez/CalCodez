@@ -1,0 +1,160 @@
+@media (max-width: 1023px) and (min-width: 500px) {
+	.nav-links-container {
+		display: none;
+	}
+
+	#menu-toggler {
+		right: 2%;
+		top: 3%;
+		font-size: 1.5rem;
+		display: block;
+		cursor: pointer;
+	}
+
+	#mobile-menu {
+		right: 1%;
+		padding: 30px;
+		top: 2%;
+		row-gap: 10px;
+	}
+
+	.card-section {
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin-bottom: 25px;
+	}
+
+	.card-container {
+		flex-direction: row;
+		width: 100%;
+		justify-content: center;
+		column-gap: 50px;
+		height: 250px;
+	}
+
+	.image-container {
+		width: 25%;
+		height: 70%;
+	}
+
+	.card-text-container {
+		width: 60%;
+		height: 80%;
+		justify-content: flex-start;
+	}
+
+	.card-text-container .card-descriptive-text {
+		font-size: 1.4rem;
+		font-weight: 200;
+	}
+
+	.team-section {
+		height: auto;
+		width: 500px;
+		height: fit-content;
+	}
+
+	.team-pic-cards-container {
+		height: auto;
+		row-gap: 50px;
+		column-gap: 80px;
+	}
+
+	.team-card-contianer {
+		width: 180px;
+		height: 220px;
+		text-align: center;
+		align-items: center;
+	}
+
+	.team-social-container {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 580px) and (min-width: 360px) {
+	.nav-links-container {
+		display: none;
+	}
+
+	#menu-toggler {
+		display: block;
+		top: 20px;
+		right: 30px;
+		font-size: 1.5rem;
+	}
+
+	#mobile-menu {
+		top: 16px;
+		right: 25px;
+		padding: 30px;
+		row-gap: 15px;
+	}
+
+	.logo-nav-container {
+		justify-content: space-between;
+	}
+
+	.header-container {
+		width: 310px;
+		font-size: 1.2rem;
+	}
+
+	.card-section {
+		width: 100%;
+		flex-direction: column;
+
+		row-gap: 15px;
+	}
+	.card-container {
+		width: 300px;
+		height: fit-content;
+		flex-direction: column;
+	}
+	.image-container {
+		width: 100%;
+	}
+	.card-text-container {
+		text-align: center;
+		width: 100%;
+	}
+	.card-text-container .card-descriptive-text {
+		font-size: 1rem;
+	}
+
+	.team-section {
+		flex-direction: column;
+	}
+
+	.team-pic-cards-container {
+		flex-direction: column;
+	}
+
+	.team-card-contianer {
+		width: 280px;
+		height: 350px;
+		text-align: center;
+		align-items: center;
+	}
+
+	.team-social-container {
+		justify-content: center;
+		font-size: large;
+	}
+
+	.footer-social-container {
+		flex-direction: column;
+		row-gap: 20px;
+	}
+
+	.footer-social-container .content {
+		width: 200px;
+		row-gap: 10px;
+		font-size: 1.5rem;
+		justify-content: flex-start;
+	}
+
+	.footer-company-info-container {
+		flex-direction: column;
+	}
+}

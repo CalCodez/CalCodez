@@ -236,7 +236,7 @@ const projects = {
               developing those skills."
               the
               project that started the learning of the skills to do so.`,
-		href: '#',
+		href: '/portfolio/Project_responsive_website/index.html',
 	},
 
 	login: {

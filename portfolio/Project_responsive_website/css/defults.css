@@ -1,0 +1,90 @@
+:root {
+	--black: #000;
+	--white: #ffff;
+	--project-color-red: #b32c1a;
+	--project-font-color: #aaaaaa;
+	--project-font-dark: #4e4d4d;
+	--project-bg: #fefefa;
+}
+
+html {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(
+		to bottom,
+		var(--project-color-yellow),
+		var(--project-color-black),
+		var(--project-color-red),
+		var(--project-color-orange)
+	);
+	width: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	width: 100%;
+	height: fit-content;
+	background-color: var(--project-color-brown);
+	position: reltaive;
+}
+
+.container {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	box-sizing: content-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a,
+li {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+a:hover {
+	transform: scale(1.09);
+}
+
+#menu-toggler {
+	color: var(--project-font-dark);
+	font-size: 1.2rem;
+	position: absolute;
+	top: 0;
+	right: 300px;
+	z-index: 2;
+	display: none;
+}
+
+#mobile-menu {
+	display: none;
+	flex-direction: column;
+	width: fit-content;
+	height: fit-content;
+	background: var(--white);
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	right: 295px;
+	z-index: 1;
+}
+
+#mobile-menu a {
+	color: var(--project-font-dark);
+	font-size: 1.2rem;
+}
