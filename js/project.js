@@ -282,7 +282,7 @@ const projects = {
               layout, styling, and search bar, ensuring an accurate visual match. It’s a straightforward demonstration
               of
               understanding basic HTML, CSS, and link functionality.`,
-		href: '#',
+		href: '/portfolio/Project_Google_Page/index.html',
 	},
 
 	defaultImg: {

@@ -1,0 +1,95 @@
+@media (max-width: 768px) {
+	.section-image-container {
+		margin-bottom: -90px;
+	}
+
+	.search-bar-container {
+		margin-bottom: 10px;
+	}
+
+	.search-bar-container input {
+		width: 65%;
+	}
+
+	.fa-magnifying-glass {
+		left: 20%;
+	}
+	.fa-microphone {
+		right: 25%;
+	}
+
+	.fa-camera {
+		right: 20%;
+	}
+
+	.spans {
+		width: 150px;
+	}
+}
+
+@media (max-width: 512px) {
+	.search-bar-container {
+		margin-top: 100px;
+	}
+	.search-bar-container input {
+		width: 80%;
+	}
+
+	.fa-magnifying-glass {
+		left: 14%;
+	}
+
+	.fa-camera {
+		left: 83%;
+	}
+
+	.fa-microphone {
+		right: 20%;
+	}
+
+	a,
+	.exit-link i {
+		visibility: hidden;
+	}
+
+	i,
+	#mobile-menu a,
+	#mobile-menu i {
+		visibility: visible;
+	}
+
+	.footer-left-links {
+		width: 20%;
+	}
+}
+
+@media (max-width: 381px) {
+	.left-links-container {
+		display: none;
+	}
+
+	.right-links-container {
+		margin-left: 10px;
+	}
+
+	.section-image-container {
+		width: 300px;
+		margin-bottom: -120px;
+	}
+
+	.search-bar-container input {
+		width: 95%;
+	}
+
+	.fa-magnifying-glass {
+		left: 8%;
+	}
+
+	.fa-camera {
+		left: 86%;
+	}
+
+	.fa-microphone {
+		right: 20%;
+	}
+}
